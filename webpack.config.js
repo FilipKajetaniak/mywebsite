@@ -3,7 +3,6 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var styleLintPlugin = require('stylelint-webpack-plugin');
 
 require('es6-promise').polyfill();
 
@@ -18,16 +17,6 @@ module.exports = {
   plugins: [
     // Specify the resulting CSS filename
     new ExtractTextPlugin('css/app.css'),
-
-    // Stylelint plugin
-    new styleLintPlugin({
-      configFile: '.stylelintrc',
-      context: '',
-      files: '**/*.scss',
-      syntax: 'scss',
-      failOnError: false,
-      quiet: false
-    })
   ],
 
   module: {
