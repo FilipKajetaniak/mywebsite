@@ -1,3 +1,3 @@
 'use strict';
 
-require('./main.scss');
+require('./sass/main.scss');
