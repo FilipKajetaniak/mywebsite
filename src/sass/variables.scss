@@ -1,0 +1,39 @@
+// colors
+$brick: rgb(255, 85, 85);
+$orange: #FFAA64;
+$yellow: #FFF5A5;
+$dark: #2A2B2A;
+
+// $brick: #4BA2AC;
+// $orange: #9EE6CF;
+// $yellow: #F0EEC9;
+// $dark: #2A2B2A;
+
+// $brick: #144D53;
+// $orange: #307672;
+// $yellow: #E4EDDB;
+// $dark: #1A3C40;
+
+// $brick: #232931;
+// $orange: #393E46;
+// $yellow: #EEEEEE;
+// $dark: #4ECCA3;
+
+// shadows
+$shadow: 3px 4px 18px 1px darken($brick, 3);
+
+// fonts
+$f: Helvetica;
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../../fonts/Helvetica-Bold.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../../fonts/Helvetica-Neue.woff');
+    font-weight: 300;
+    font-style: normal;
+}

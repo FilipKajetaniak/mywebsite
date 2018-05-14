@@ -1,1 +1,37 @@
 @import 'reset';
+@import 'variables';
+
+
+body{
+    background: linear-gradient(to right, $brick, $orange);
+}
+
+h1{
+    color: $yellow;
+    font-size: 4em;
+    font-family: $f;
+    font-weight: 900;
+}
+
+.kafelek{
+    height: 400px;
+    width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: $shadow;
+    h1{
+        color: $dark;
+        margin: 17px !important;
+        font-family: $f;
+        font-size: 2em;
+        font-weight: 300;
+        line-height: 1.2em;
+        letter-spacing: 1px;
+        b{
+            font-weight: 400;
+            color: $brick;
+        }
+    }
+}
