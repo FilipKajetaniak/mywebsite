@@ -1,16 +1,19 @@
 @import 'reset';
 @import 'variables';
+@import 'portrait3D';
 
 
 body{
-    background: linear-gradient(to right, $brick, $orange);
+    // background: linear-gradient(to right, $orangeD, $orangeL);
 }
 
 h1{
     color: $yellow;
-    font-size: 4em;
     font-family: $f;
     font-weight: 900;
+    font-size: 9em;
+    letter-spacing: -0.06em;
+    line-height: 0.8em;
 }
 
 .kafelek{
@@ -31,7 +34,21 @@ h1{
         letter-spacing: 1px;
         b{
             font-weight: 400;
-            color: $brick;
+            color: $orangeD;
         }
     }
 }
+
+.name{
+    transform: translateX(1.5px);
+    letter-spacing: -0.074em !important;
+  }
+  
+  .surname{
+    padding-bottom: 0.4em;
+  }
+  
+  .name::first-letter{
+    font-size: 1.01em;
+  }
+

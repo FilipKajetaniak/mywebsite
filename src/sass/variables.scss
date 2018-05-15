@@ -1,26 +1,20 @@
 // colors
-$brick: rgb(255, 85, 85);
-$orange: #FFAA64;
+$orangeD: rgb(255, 85, 85);
+$orangeL: #FFAA64;
 $yellow: #FFF5A5;
 $dark: #2A2B2A;
 
-// $brick: #4BA2AC;
-// $orange: #9EE6CF;
-// $yellow: #F0EEC9;
-// $dark: #2A2B2A;
+$greenD: #01ffad;
+$greenL: #01ffe3; 
+ 
+$blueD: #01c9ff;
+$blueL : #01fffd;
 
-// $brick: #144D53;
-// $orange: #307672;
-// $yellow: #E4EDDB;
-// $dark: #1A3C40;
-
-// $brick: #232931;
-// $orange: #393E46;
-// $yellow: #EEEEEE;
-// $dark: #4ECCA3;
+$purpleD: #a401ff;
+$purpleL : #d501ff;
 
 // shadows
-$shadow: 3px 4px 18px 1px darken($brick, 3);
+$shadow: 3px 4px 14px 1px darken($orangeD, 3);
 
 // fonts
 $f: Helvetica;
@@ -37,3 +31,7 @@ $f: Helvetica;
     font-weight: 300;
     font-style: normal;
 }
+
+// text selection
+::-moz-selection { background: $orangeL; color: white; }
+::selection { background: $orangeL; color: white; }

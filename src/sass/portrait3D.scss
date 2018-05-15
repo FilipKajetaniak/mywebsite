@@ -1,0 +1,32 @@
+#card{
+    height: 370px;
+    width: 270px;
+    margin: 50px auto;
+    background: linear-gradient(to top, $orangeD, $orangeL);
+    transform: rotateY(0deg);
+    transform: rotateX(0deg);
+    border-radius: 8px;
+    transition: 200ms all ease-in-out;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  }
+  
+  #parent{
+      -webkit-perspective: 1000px; /* Safari 4-8 */
+    perspective: 1000px;
+  }
+  
+  #glow{
+    background-color: white;
+    margin: 60px auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    transform: translateX(0%);
+    transform: translateY(0%);
+    -webkit-filter: blur(130px);
+    opacity: 0;
+    filter: blur(130px);
+    transition: 200ms all ease-in-out;
+  }
