@@ -3,54 +3,18 @@
 @import 'portrait3D';
 
 
-body{
-    // background: linear-gradient(to right, $orangeD, $orangeL);
+html, body{
+    height: 100%;
 }
 
-h1{
-    top: 0;
-    left: 0;
-    color: $dark;
-    font-family: $f;
-    font-weight: 900;
-    font-size: 9em;
-    letter-spacing: -0.06em;
-    line-height: 0.8em;
+.page{
+    height: 4000px;
+    width: 100%;
+    background-color: cornflowerblue;
 }
 
-.kafelek{
-    height: 400px;
-    width: 600px;
-    margin: 100px auto;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: white;
-    box-shadow: $shadow;
-    h1{
-        color: $dark;
-        margin: 17px !important;
-        font-family: $f;
-        font-size: 2em;
-        font-weight: 300;
-        line-height: 1.2em;
-        letter-spacing: 1px;
-        b{
-            font-weight: 400;
-            color: $orangeD;
-        }
-    }
+.page1{
+    height: 100%;
+    width: 100%;
+    background-color: beige;
 }
-
-.name{
-    transform: translateX(1.5px);
-    letter-spacing: -0.074em !important;
-  }
-  
-  .surname{
-    padding-bottom: 0.4em;
-  }
-  
-  .name::first-letter{
-    font-size: 1.01em;
-  }
-
