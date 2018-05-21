@@ -1,0 +1,30 @@
+.contact{
+    font-family: $f;
+    padding: 100px;
+    h2{
+        font-size: 1.5em;
+        line-height: 1.6em;
+        color: $grey;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    h1{
+        font-size: 3em;
+        font-weight: bold;
+    }
+
+    a{
+        text-decoration: none;
+        color: $orangeD;
+        font-size: 3em;
+    }
+
+    a:hover{
+        color: $orangeL;
+    }
+    .social{
+        a{
+            margin-right: 40px;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'variables';
 @import 'sidenav';
+@import 'contact';
 
 html, body{
     height: 100%;
@@ -10,7 +11,14 @@ html, body{
     width: 100%;
     max-width: 1800px;
     margin: 0 auto;
-    background-color: rgb(236, 236, 236);
+    background-color: #f3f3f3;
     height: 6000px;
     position: relative;
+}
+
+.content{
+    width: 62.2%;
+    height: 400px;
+    box-sizing: border-box;
+    margin-left: 37.8%;
 }
