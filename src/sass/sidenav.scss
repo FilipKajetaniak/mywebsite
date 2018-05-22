@@ -49,7 +49,17 @@
         letter-spacing: 1px;
         bottom: 100px;
         left: 0;
-        color: $grey;
+        color: rgb(180, 180, 180);
+        a{
+            color: black;
+            margin-right: 10px;
+        }
+        a:last-of-type{
+            margin-right: 40px;
+        }
+        a:hover{
+            color: $orangeD;
+        }
     }
     button{
         font-size: 1.3em;
