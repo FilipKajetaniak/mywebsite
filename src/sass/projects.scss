@@ -1,0 +1,36 @@
+.projects{
+    height: auto;
+    width: 100%;
+    background: linear-gradient(45deg, $orangeD, $orangeL);
+}
+
+.project{
+    height: 680px;
+    padding: 100px;
+    padding-right: 0;
+    overflow: hidden;
+    position: relative;
+    h1{
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+    }
+    .project-img{
+        position: absolute;
+        height: 480px;
+        width: 854px;
+        background-color: white;
+        left: 50%;
+        transition: all 300ms ease-in-out;
+        -webkit-box-shadow: -10px 10px 23px -3px darken($orangeD, 1);
+        -moz-box-shadow: -10px 10px 23px -3px darken($orangeD, 1);
+        box-shadow: -10px 10px 23px -3px darken($orangeD, 1);
+    }
+    .project-img:hover{
+        position: absolute;
+        height: 480px;
+        width: 854px;
+        background-color: white;
+        left: 100px;
+    }
+}

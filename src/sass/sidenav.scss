@@ -24,7 +24,7 @@
     }
 
     .hello{
-        margin-top: 140px;
+        margin-top: 120px;
         font-size: 2em;
         font-weight: bold;
     }
@@ -36,11 +36,12 @@
     }
     p{
         margin-top: 40px;
-        font-size: 1.2em;
+        margin-bottom: 40px;
+        font-size: 1.3em;
         line-height: 2em;
         b{
             font-weight: bold;
-            color: $orangeD;
+            // color: $orangeD;
         }
     }
     footer{
@@ -48,5 +49,32 @@
         letter-spacing: 1px;
         bottom: 100px;
         left: 0;
+        color: $grey;
+    }
+    button{
+        font-size: 1.3em;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        padding: 10px;
+        color: white;
+        // border-radius: 100px;
+        background: linear-gradient(270deg, $orangeD, $orangeL);
+        -webkit-box-shadow: 5px 5px 8px -3px transparentize($orangeD, 0.7);
+        -moz-box-shadow: 5px 5px 8px -3px transparentize($orangeD, 0.7);
+        box-shadow: 5px 5px 8px -3px transparentize($orangeD, 0.3);
+        transition: 100ms all;
+    }
+    button:hover{
+        transform: translateY(-4px);
+        -webkit-box-shadow: 5px 9px 12px -1px transparentize($orangeD, 0.7);
+        -moz-box-shadow: 5px 9px 12px -1px transparentize($orangeD, 0.7);
+        box-shadow: 5px 9px 12px -1px transparentize($orangeD, 0.7);
+    }
+    button:active{
+        transform: translateY(2px);
+        -webkit-box-shadow: 2px 2px 2px -5px darken($orangeD, 3);
+        -moz-box-shadow: 2px 2px 2px -5px darken($orangeD, 3);
+        box-shadow: 2px 2px 2px -5px darken($orangeD, 3);
     }
 }
