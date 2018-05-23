@@ -1,0 +1,30 @@
+.about{
+    padding: 100px 100px 0 100px;
+    height: auto;
+    width: 100%;
+    font-family: $f;
+    h1{
+        font-size: 2em;
+        font-weight: bold;
+    }
+    p{
+        font-size: 1.3em;
+        line-height: 2em;
+        color: $grey;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+}
+.skills{
+    background-color: $orangeD;
+    background: linear-gradient(45deg, $orangeD, $orangeL);
+    padding: 100px;
+    height: auto;
+    width: 100%;
+    color: white;
+    font-family: $f;
+    h1{
+        font-size: 2em;
+        font-weight: bold;
+    }
+}

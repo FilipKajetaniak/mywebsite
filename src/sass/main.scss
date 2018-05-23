@@ -3,6 +3,7 @@
 @import 'sidenav';
 @import 'contact';
 @import 'projects';
+@import 'about';
 
 html, body{
     height: 100%;
@@ -14,6 +15,8 @@ html, body{
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    min-height: 100%;
+    background-color: #fafafa;
 }
 
 .content{
@@ -22,4 +25,9 @@ html, body{
     height: auto;
     box-sizing: border-box;
     margin-left: 37.8%;
+}
+
+b{
+    font-weight: bold;
+    // color: $orangeD;
 }

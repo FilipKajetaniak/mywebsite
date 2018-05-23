@@ -1,14 +1,13 @@
 .projects{
     height: auto;
     width: 100%;
-    background-color: white;
     font-family: $f;
 }
 
 .project{
     height: 600px;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     cursor: pointer;
     padding: 100px;
     padding-right: 0;
@@ -18,10 +17,11 @@
         height: 400px;
         background-color: white;
         position: absolute;
-        right: -100px;
+        left: 480px;
     }
     .project-text{
         position: absolute;
+        width: 420px;
     }
     .project-icons{
         position: absolute;
@@ -31,12 +31,18 @@
         font-size: 2em;
         i{
             margin-right: 10px;
+            transition: 200ms all ease-in-out;
         }
-        span{
-            display: none;
+        .label{
+            width: 0px;
+            opacity: 0;
             font-size: 0.5em;
-            margin: 0 5px;
-            transform: translateY(-0.5em);
+            display: inline-block;
+            height: inherit;
+            transform: translateY(-0.2em);
+            overflow: hidden;
+            transition: 200ms all ease-in-out;
+            padding-left: 10px;
         }
     }
     h1{
@@ -54,36 +60,43 @@
     p{
         margin-top: 40px;
         color: white;
-        font-size: 1.4em;
+        font-size: 1.3em;
         line-height: 1.7em;
     }
 }
 .project:hover{
-    span{
-        display: inline-block;
+    .label{
+        width: 100px;
+        opacity: 1;
     }
 }
 #dziecimamy{
     background-color: #0098ff;
+    background: linear-gradient(45deg, #0098ff, #4bb7ff);
     .project-img{
         -webkit-box-shadow: -25px 25px 52px -3px #002d759d;
         -moz-box-shadow: -25px 25px 52px -3px #002d759d;
         box-shadow: -25px 25px 52px -3px #002d759d;
         background-image: url('~/img/dziecimamy.png');
     }
+    i:last-of-type{
+        transform: scale(0.9);
+    }
 }
 
 #kajetaniak{
     background-color: $orangeD;
+    background: linear-gradient(45deg, $orangeD, $orangeL);
     .project-img{
-        -webkit-box-shadow: -25px 25px 52px -3px #5a0412b4;
-        -moz-box-shadow: -25px 25px 52px -3px #5a0412b4;
-        box-shadow: -25px 25px 52px -3px #5a04129d;
+        -webkit-box-shadow: -25px 25px 52px -3px #81061b9d;
+        -moz-box-shadow: -25px 25px 52px -3px #81061b9d;
+        box-shadow: -25px 25px 52px -3px #81061b9d;
     }
 }
 
 #stock{
     background-color: #585764;
+    background: linear-gradient(45deg, #585764, #8c8a9c);
     .project-img{
         -webkit-box-shadow: -25px 25px 52px -3px #1211189d;
         -moz-box-shadow: -25px 25px 52px -3px #1211189d;
@@ -93,6 +106,7 @@
 
 #novak{
     background-color: #00a3d7;
+    background: linear-gradient(45deg, #0083b3, #00baf0);
     .project-img{
         -webkit-box-shadow: -25px 25px 52px -3px #1211189d;
         -moz-box-shadow: -25px 25px 52px -3px #1211189d;
