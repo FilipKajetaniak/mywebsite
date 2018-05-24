@@ -25,6 +25,10 @@ html, body{
     height: auto;
     box-sizing: border-box;
     margin-left: 37.8%;
+    @include medium-small {
+        width: 100%; 
+        margin-left: 100px;
+    }
 }
 
 b{

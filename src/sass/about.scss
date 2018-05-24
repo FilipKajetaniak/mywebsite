@@ -14,6 +14,9 @@
         margin-top: 40px;
         margin-bottom: 100px;
     }
+    @include medium-small {
+        padding-right: 200px;
+    }
 }
 .skills{
     background-color: $orangeD;
@@ -23,37 +26,73 @@
     width: 100%;
     color: white;
     font-family: $f;
-    .table{
-        height: 600px;
-        #languages, #tools{
-            width: 50%;
-            float: left;
-            height: 100%;
-            h2{
-                font-weight: bold;
-                margin-bottom: 40px;
+    h2{
+        font-weight: bold;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 2em;
+        width: 100%;
+    }
+    div{
+        width: 152px;
+        margin: 0 auto;
+        font-size: 1.3em;
+        line-height: 2em;
+        text-align: center;
+        position: relative;
+        div{
+            position: absolute;
+            z-index: 2;
+            text-align: center;
+            width: 500%;
+            margin-left: -200%;
+            visibility: hidden;
+            opacity: 0;
+            transform: rotateX(-90deg);
+            transform-origin: top;
+            transition: 200ms all ease-out;
+            filter: drop-shadow(3px 5px 2px #af05229d);
+            span{
+                padding: 5px 30px 5px 30px;
+                background-color: white;
                 text-align: center;
-                font-size: 2em;
+                font-size: 0.8em;
+                color: black;
             }
-            ul{
-                li{
-                    font-size: 1.3em;
-                    line-height: 2em;
-                    text-align: center;
-                }
+            span::before{
+                content: '';
+                background-color: white;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                display: block;
+                left: 50%;
+                margin-left: -7.5px;
+                top: 5px;
+                transform: rotate(45deg);
+                z-index: -1;
             }
         }
     }
-    #scale{
-        width: 100%;
-        height: 1.3em;
-        background: linear-gradient(to right, transparent, white);
+    div:hover{
+        div{
+            visibility: visible;
+            opacity: 1;
+            transform: rotateX(0deg);
+            z-index: 10;
+        }
+        div:hover{
+            visibility: hidden;
+            opacity: 0;
+            transform: rotateX(-90deg);
+        }
     }
-    #scale-markers{
-        margin-top: 20px;
+    @include medium-small {
+        padding-right: 200px;
+    }
+    h4{
         width: 100%;
-        height: 2em;
-        border-left: 2px solid white;
-        border-right: 2px solid white;
+        margin-top: 40px;
+        text-align: center;
     }
 }
