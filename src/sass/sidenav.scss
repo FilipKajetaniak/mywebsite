@@ -1,3 +1,14 @@
+@mixin medium{
+    @media only screen and (max-width: 1480px) {
+        @content;
+    }
+}
+@mixin medium-small{
+    @media only screen and (max-width: 1180px) {
+        @content;
+    }
+}
+
 .side-nav{
     position: absolute;
     height: 100%;
@@ -12,7 +23,13 @@
         position: fixed;
         height: 100vh;
     }
+    .resizable{
+        font-size: 16px;
+        width: 455px;
+    }
+
     nav{
+        width: 380px;
         span{
             margin-right: 20px;
             cursor: pointer;
@@ -82,5 +99,42 @@
         -webkit-box-shadow: 2px 2px 2px -5px darken($orangeD, 3);
         -moz-box-shadow: 2px 2px 2px -5px darken($orangeD, 3);
         box-shadow: 2px 2px 2px -5px darken($orangeD, 3);
+    }
+
+    @include medium {
+        .fixed{
+            width: inherit;
+            padding-right: 100px;
+        }
+        .resizable{
+            font-size: 12px;
+            width: 345px;
+        }
+        footer{
+            span{
+                display: none;
+            }
+        }
+    }
+    @include medium-small {
+        width: 100px;
+        padding-left: 20px;
+        .resizable{
+            display: none;
+        }
+        nav{
+            width: 60px;
+            line-height: 2.2em;
+        }
+        footer{
+            width: 60px;
+            a{
+                width: 100%;
+                display: inline-block;
+                text-align: center;
+                line-height: 2.2em;
+                font-size: 1.2em;
+            }
+        }
     }
 }
