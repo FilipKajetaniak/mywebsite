@@ -3,27 +3,38 @@
     height: 60px;
     left: 50%;
     margin-left: -455px;
-    // background-color: #fafafa;
     background-color: white;
     position: fixed;
     z-index: 9999;
     font-family: $f;
     overflow: hidden;
-    span{
-        margin-right: 30px;
+    clear: both;
+    .menu-item{
+        padding-right: 30px;
         cursor: pointer;
         font-weight: bold;
         font-size: 1.2em;
+        height: 55px;
         line-height: 60px;
+        float: left;
+        margin-bottom: 4px;
     }
-    span:hover{
-        border-bottom: $orangeD 3px solid;
+    #contact{
+        padding: 0;
+    }
+    #underline{
+        height: 4px;
+        width: 54px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $orangeD;
+        transition: all 80ms ease-out;
     }
     #lang{
         position: absolute;
         right: 0;
         top: 0;
-        transform: translateX(25px);
         cursor: pointer;
         overflow: hidden;
         font-weight: bold;
@@ -31,12 +42,23 @@
         height: 60px;
         text-align: right;
         line-height: 60px;
+        width: 25px;
         div{
             float: left;
             width: 25px;
+            height: 60px;
+            position: absolute;
+            text-align: center;
+            transition: 100ms all ease-in-out;
+        }
+        #pl{
+            right: -25px;
         }
     }
     #lang:hover{
+        color: $orangeD;
+    }
+    .pl-active{
         div{
             transform: translateX(-25px);
         }
