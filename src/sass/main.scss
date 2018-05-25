@@ -1,34 +1,23 @@
 @import 'reset';
 @import 'variables';
-@import 'sidenav';
 @import 'contact';
 @import 'projects';
 @import 'about';
+@import 'nav';
+@import 'heading';
 
 html, body{
     height: 100%;
 }
 
-.wrapper{
-    width: 100%;
-    max-width: 1800px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    min-height: 100%;
-    background-color: #fafafa;
-}
-
 .content{
-    width: 62.2%;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 910px;
     min-height: 100%;
+    position: relative;
     height: auto;
     box-sizing: border-box;
-    margin-left: 37.8%;
-    @include medium-small {
-        width: 100%; 
-        margin-left: 100px;
-    }
 }
 
 b{

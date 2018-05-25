@@ -1,0 +1,44 @@
+.navbar{
+    width: 910px;
+    height: 60px;
+    left: 50%;
+    margin-left: -455px;
+    // background-color: #fafafa;
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    font-family: $f;
+    overflow: hidden;
+    span{
+        margin-right: 30px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.2em;
+        line-height: 60px;
+    }
+    span:hover{
+        border-bottom: $orangeD 3px solid;
+    }
+    #lang{
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateX(25px);
+        cursor: pointer;
+        overflow: hidden;
+        font-weight: bold;
+        font-size: 1.2em;
+        height: 60px;
+        text-align: right;
+        line-height: 60px;
+        div{
+            float: left;
+            width: 25px;
+        }
+    }
+    #lang:hover{
+        div{
+            transform: translateX(-25px);
+        }
+    }
+}

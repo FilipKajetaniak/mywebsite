@@ -1,5 +1,5 @@
 .about{
-    padding: 100px 100px 0 100px;
+    padding: 100px 0 0 0;
     height: auto;
     width: 100%;
     font-family: $f;
@@ -13,9 +13,6 @@
         color: $grey;
         margin-top: 40px;
         margin-bottom: 100px;
-    }
-    @include medium-small {
-        padding-right: 200px;
     }
 }
 .skills{
@@ -75,6 +72,7 @@
         }
     }
     div:hover{
+        cursor: zoom-in;
         div{
             visibility: visible;
             opacity: 1;
@@ -86,9 +84,6 @@
             opacity: 0;
             transform: rotateX(-90deg);
         }
-    }
-    @include medium-small {
-        padding-right: 200px;
     }
     h4{
         width: 100%;

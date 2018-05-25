@@ -1,7 +1,6 @@
 .contact{
-    background-color: #fafafa;
     font-family: $f;
-    padding: 100px;
+    padding: 100px 0;
     h2{
         font-size: 1.3em;
         line-height: 2em;
@@ -32,17 +31,4 @@
             border: none;
         }
     }
-    @include medium-small {
-        padding-right: 200px;
-    }
 }
-
-// .dummy{
-//     height: 800px;
-//     background-color: #fafafa;
-//     background-image: url('~/img/gpiryj.png');
-//     background-size: 60%;
-//     background-repeat: no-repeat;
-//     background-position: bottom center;
-//     // background: linear-gradient(45deg, $orangeD, $orangeL);
-// }

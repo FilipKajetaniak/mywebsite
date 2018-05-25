@@ -1,35 +1,15 @@
-@mixin medium{
-    @media only screen and (max-width: 1480px) {
-        @content;
-    }
-}
-@mixin medium-small{
-    @media only screen and (max-width: 1180px) {
-        @content;
-    }
-}
-
-.side-nav{
-    position: absolute;
-    height: 100%;
-    width: 37.8%;
-    top: 0;
-    left: 0;
-    background-color: white;
+.heading{
+    width: 100%;
     box-sizing: border-box;
-    padding: 50px;
+    padding-top: 60px;
     font-family: $f;
-    .fixed{
-        position: fixed;
-        height: 100vh;
-    }
     .resizable{
         font-size: 16px;
         width: 455px;
     }
-
     nav{
         width: 380px;
+        position: relative;
         span{
             margin-right: 20px;
             cursor: pointer;
@@ -41,7 +21,7 @@
     }
 
     .hello{
-        margin-top: 120px;
+        margin-top: 100px;
         font-size: 2em;
         font-weight: bold;
     }
@@ -53,26 +33,9 @@
     }
     p{
         margin-top: 40px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         font-size: 1.3em;
         line-height: 2em;
-    }
-    footer{
-        position: absolute;
-        letter-spacing: 1px;
-        bottom: 100px;
-        left: 0;
-        color: rgb(180, 180, 180);
-        a{
-            color: black;
-            margin-right: 10px;
-        }
-        a:last-of-type{
-            margin-right: 40px;
-        }
-        a:hover{
-            color: $orangeD;
-        }
     }
     button{
         font-size: 1.3em;
@@ -100,41 +63,28 @@
         -moz-box-shadow: 2px 2px 2px -5px darken($orangeD, 3);
         box-shadow: 2px 2px 2px -5px darken($orangeD, 3);
     }
-
-    @include medium {
-        .fixed{
-            width: inherit;
-            padding-right: 100px;
+    footer{
+        height: 60px;
+        line-height: 105px;
+        margin-top: 130px;
+        font-size: 1.2em;
+        a{
+            color: black;
+            margin-right: 10px;
         }
-        .resizable{
-            font-size: 12px;
-            width: 345px;
+        a:last-of-type{
+            margin-right: 40px;
         }
-        footer{
-            span{
-                display: none;
-            }
-        }
-    }
-    @include medium-small {
-        width: 100px;
-        padding-left: 20px;
-        .resizable{
-            display: none;
-        }
-        nav{
-            width: 60px;
-            line-height: 2.2em;
-        }
-        footer{
-            width: 60px;
-            a{
-                width: 100%;
-                display: inline-block;
-                text-align: center;
-                line-height: 2.2em;
-                font-size: 1.2em;
-            }
+        a:hover{
+            color: $orangeD;
         }
     }
+}
+.bg-img{
+    background-image: url('~/img/gpiryj.png');
+    background-size: 507px 650px;
+    background-repeat: no-repeat;
+    background-position: right 100px;  
+    overflow: visible !important;
+    background-attachment: local;
 }
