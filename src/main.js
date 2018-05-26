@@ -1,4 +1,5 @@
-'use strict';
+import './js/nav';
+import './js/router';
 
 require('./sass/main.scss');
-import nav from './js/nav'
+

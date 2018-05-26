@@ -10,6 +10,10 @@ html, body{
     height: 100%;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .content{
     width: 100%;
     margin: 0 auto;
@@ -23,4 +27,9 @@ html, body{
 b{
     font-weight: bold;
     // color: $orangeD;
+}
+.slot{
+    transition: all 100ms cubic-bezier(.84,.02,.24,1);
+    opacity: 1; 
+    transform: translateX(0);
 }
