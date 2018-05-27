@@ -2,6 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "My personal portfolio website",
+  "babel": {
+    "presets": ["env"]
+  },
   "main": "webpack.config.js",
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.js --port 3000 --hot --inline",
@@ -21,6 +24,8 @@
     "autoprefixer": "^7.1.6",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "css-loader": "^0.28.7",
     "es6-promise": "^4.1.1",
     "eslint": "^4.19.1",

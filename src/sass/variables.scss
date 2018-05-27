@@ -1,6 +1,7 @@
-// colors
 $orangeD: #fa1949;
 $orangeL: #fa7e19;
+// $orangeL: #8dc26f;
+// $orangeD: #76b852;
 $yellow: #ffce64;
 $dark: #2D4059;
 $grey: rgba(0, 0, 0, 0.746);
@@ -14,10 +15,8 @@ $blueL : #01fffd;
 $purpleD: #a401ff;
 $purpleL : #d501ff;
 
-// shadows
 $shadow: 3px 4px 14px 1px darken($orangeD, 3);
 
-// fonts
 $f: Karla;
 
 @font-face {
@@ -44,6 +43,6 @@ $f: Karla;
     font-weight: Bold;
     font-style: italic;
 }
-// text selection
+
 ::-moz-selection { background: $orangeL; color: white; }
 ::selection { background: $orangeL; color: white; }
