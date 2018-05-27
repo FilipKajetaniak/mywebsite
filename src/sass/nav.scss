@@ -1,8 +1,9 @@
 .navbar{
-    width: 910px;
+    width: 1010px;
+    padding: 0 50px;
     height: 60px;
     left: 50%;
-    margin-left: -455px;
+    margin-left: -505px;
     background-color: white;
     position: fixed;
     z-index: 9999;
@@ -33,7 +34,7 @@
     }
     #lang{
         position: absolute;
-        right: 0;
+        right: 50px;
         top: 0;
         cursor: pointer;
         overflow: hidden;

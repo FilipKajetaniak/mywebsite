@@ -21,6 +21,14 @@
         position: absolute;
         left: 480px;
     }
+    .project-img:hover{
+        animation-name: image;
+        animation-duration: 400ms;
+        top: 0;
+        left: 0;
+        width: 910px;
+        height: 500px;
+    }
     .project-text{
         position: absolute;
         width: 420px;
@@ -81,10 +89,14 @@
         box-shadow: -25px 25px 52px -3px #002d759d;
         background-image: url('~/img/dziecimamy.png');
     }
-    i:last-of-type{
-        transform: scale(0.9);
+    .project-img:hover{
+        -webkit-box-shadow: -25px 25px 102px -3px #002d7500;
+        -moz-box-shadow: -25px 25px 102px -3px #002d7500;
+        box-shadow: -25px 25px 102px -3px #002d7500;
+        transition: 400ms all;
     }
 }
+
 
 #kajetaniak{
     background-color: $orangeD;
@@ -93,6 +105,12 @@
         -webkit-box-shadow: -25px 25px 52px -3px #81061b9d;
         -moz-box-shadow: -25px 25px 52px -3px #81061b9d;
         box-shadow: -25px 25px 52px -3px #81061b9d;
+    }
+    .project-img:hover{
+        -webkit-box-shadow: -25px 25px 102px -3px #81061b00;
+        -moz-box-shadow: -25px 25px 102px -3px #81061b00;
+        box-shadow: -25px 25px 102px -3px #81061b00;
+        transition: 400ms all;
     }
 }
 
@@ -104,6 +122,12 @@
         -moz-box-shadow: -25px 25px 52px -3px #1211189d;
         box-shadow: -25px 25px 52px -3px #1211189d;
     }
+    .project-img:hover{
+        -webkit-box-shadow: -25px 25px 102px -3px #12111800;
+        -moz-box-shadow: -25px 25px 102px -3px #12111800;
+        box-shadow: -25px 25px 102px -3px #12111800;
+        transition: 400ms all;
+    }
 }
 
 #novak{
@@ -113,5 +137,31 @@
         -webkit-box-shadow: -25px 25px 52px -3px #1211189d;
         -moz-box-shadow: -25px 25px 52px -3px #1211189d;
         box-shadow: -25px 25px 52px -3px #001b3f9d;
+    }
+    .project-img:hover{
+        -webkit-box-shadow: -25px 25px 102px -3px #001b3f00;
+        -moz-box-shadow: -25px 25px 102px -3px #001b3f00;
+        box-shadow: -25px 25px 102px -3px #001b3f00;
+        transition: 400ms all;
+    }
+}
+
+@keyframes image {
+    0% {
+        top: 100px;
+        left: 480px;
+        width: 540px;
+        height: 400px;
+    }
+    50% {
+        left: 480px;
+        width: 910px;
+        height: 400px;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        width: 910px;
+        height: 500px;
     }
 }
