@@ -21,7 +21,7 @@
         position: absolute;
         left: 480px;
     }
-    .project-img:hover{
+    .clicked{
         animation-name: image;
         animation-duration: 400ms;
         top: 0;
@@ -89,14 +89,43 @@
         box-shadow: -25px 25px 52px -3px #002d759d;
         background-image: url('~/img/dziecimamy.png');
     }
-    .project-img:hover{
-        -webkit-box-shadow: -25px 25px 102px -3px #002d7500;
-        -moz-box-shadow: -25px 25px 102px -3px #002d7500;
-        box-shadow: -25px 25px 102px -3px #002d7500;
+}
+
+.dziecimamy-clicked{
+    .project-img{
+        -webkit-box-shadow: -25px 25px 102px -3px #002d7500 !important;
+        -moz-box-shadow: -25px 25px 102px -3px #002d7500 !important;
+        box-shadow: -25px 25px 102px -3px #002d7500 !important;
         transition: 400ms all;
     }
 }
 
+.kajetaniak-clicked{
+    .project-img{
+        -webkit-box-shadow: -25px 25px 102px -3px #81061b00 !important;
+        -moz-box-shadow: -25px 25px 102px -3px #81061b00 !important;
+        box-shadow: -25px 25px 102px -3px #81061b00 !important;
+        transition: 400ms all;
+    }
+}
+
+.stock-clicked{
+    .project-img{
+        -webkit-box-shadow: -25px 25px 102px -3px #12111800 !important;
+        -moz-box-shadow: -25px 25px 102px -3px #12111800 !important;
+        box-shadow: -25px 25px 102px -3px #12111800 !important;
+        transition: 400ms all;
+    }
+}
+
+.novak-clicked{
+    .project-img{
+        -webkit-box-shadow: -25px 25px 102px -3px #001b3f00 !important;
+        -moz-box-shadow: -25px 25px 102px -3px #001b3f00 !important;
+        box-shadow: -25px 25px 102px -3px #001b3f00 !important;
+        transition: 400ms all;
+    }
+}
 
 #kajetaniak{
     background-color: $orangeD;
@@ -105,12 +134,6 @@
         -webkit-box-shadow: -25px 25px 52px -3px #81061b9d;
         -moz-box-shadow: -25px 25px 52px -3px #81061b9d;
         box-shadow: -25px 25px 52px -3px #81061b9d;
-    }
-    .project-img:hover{
-        -webkit-box-shadow: -25px 25px 102px -3px #81061b00;
-        -moz-box-shadow: -25px 25px 102px -3px #81061b00;
-        box-shadow: -25px 25px 102px -3px #81061b00;
-        transition: 400ms all;
     }
 }
 
@@ -122,12 +145,6 @@
         -moz-box-shadow: -25px 25px 52px -3px #1211189d;
         box-shadow: -25px 25px 52px -3px #1211189d;
     }
-    .project-img:hover{
-        -webkit-box-shadow: -25px 25px 102px -3px #12111800;
-        -moz-box-shadow: -25px 25px 102px -3px #12111800;
-        box-shadow: -25px 25px 102px -3px #12111800;
-        transition: 400ms all;
-    }
 }
 
 #novak{
@@ -137,12 +154,6 @@
         -webkit-box-shadow: -25px 25px 52px -3px #1211189d;
         -moz-box-shadow: -25px 25px 52px -3px #1211189d;
         box-shadow: -25px 25px 52px -3px #001b3f9d;
-    }
-    .project-img:hover{
-        -webkit-box-shadow: -25px 25px 102px -3px #001b3f00;
-        -moz-box-shadow: -25px 25px 102px -3px #001b3f00;
-        box-shadow: -25px 25px 102px -3px #001b3f00;
-        transition: 400ms all;
     }
 }
 
