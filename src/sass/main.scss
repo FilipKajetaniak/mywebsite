@@ -5,6 +5,7 @@
 @import 'about';
 @import 'nav';
 @import 'heading';
+@import 'dziecimamy';
 
 html, body{
     height: 100%;
@@ -32,4 +33,16 @@ b{
     transition: all 100ms cubic-bezier(.84,.02,.24,1);
     opacity: 1; 
     transform: translateX(0);
+}
+
+#cover-img{
+    background-color: aqua;
+    position: fixed;
+    height: 450px;
+    top: 60px;
+    width: 910px;
+    left: 50%;
+    margin-left: -455px;
+    display: none;
+    background-image: url('~/img/dziecimamy.png');
 }
