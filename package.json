@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "My personal portfolio website",
   "babel": {
-    "presets": ["env"]
+    "presets": [
+      "env",
+      "stage-0"
+    ]
   },
   "main": "webpack.config.js",
   "scripts": {
@@ -26,6 +29,7 @@
     "babel-loader": "^7.1.2",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.7",
     "es6-promise": "^4.1.1",
     "eslint": "^4.19.1",
