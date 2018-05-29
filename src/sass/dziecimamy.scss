@@ -1,39 +1,20 @@
 .dziecimamy-article{
     padding-top: 60px;
-    height: 101vh;
-    div{
+    font-family: $f;
+    h1{
+
+    }
+    .article-img{
         height: 450px;
         width: 100%;
         background-image: url('~/img/dziecimamy.png');
     }
-    h2{
-        font-size: 1.3em;
-        line-height: 2em;
-        color: $grey;
-        margin-bottom: 40px;
-        margin-top: 40px;
+    .project-description{
+        width: 610px;
+        float: left;
     }
-    h1{
-        font-size: 2em;
-        font-weight: bold;
-    }
-
-    a{
-        color: $orangeD;
-        font-size: 2em;
-        text-decoration: none;
-        border-bottom: 2px $orangeD solid; 
-    }
-
-    a:hover{
-        color: $orangeL;
-        border-bottom: 2px $orangeL solid;  
-    }
-    .social{
-        a{
-            margin-right: 40px;
-            text-decoration: none;
-            border: none;
-        }
+    .stack{
+        width: 300px;
+        float: right;
     }
 }
