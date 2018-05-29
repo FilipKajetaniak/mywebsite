@@ -23,10 +23,10 @@
     .clicked{
         animation-name: image;
         animation-duration: 400ms;
-        top: 0;
+        top: 50px;
         left: 0;
         width: 910px;
-        height: 500px;
+        height: 450px;
     }
     .project-text{
         position: absolute;
@@ -189,9 +189,9 @@
         height: 400px;
     }
     100% {
-        top: 0;
+        top: 50px;
         left: 0;
         width: 910px;
-        height: 500px;
+        height: 450px;
     }
 }
