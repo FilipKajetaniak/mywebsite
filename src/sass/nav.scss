@@ -25,9 +25,9 @@
     }
     #underline{
         height: 4px;
-        width: 54px;
+        width: 0px;
         position: absolute;
-        left: 0;
+        left: 50px;
         bottom: 0;
         background-color: $orangeD;
         transition: all 80ms ease-out;
@@ -64,8 +64,4 @@
             transform: translateX(-25px);
         }
     }
-}
-
-.hidden{
-    display: none;
 }
