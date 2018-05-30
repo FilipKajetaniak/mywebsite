@@ -7,10 +7,10 @@
     }
     p{
         font-size: 1.3em;
-        line-height: 1.6em;
+        line-height: 2em;
         color: $grey;
         margin-top: 40px;
-        margin-bottom: 20px;
+        margin-bottom: 100px;
     }
     .article-img{
         height: 450px;
@@ -22,26 +22,32 @@
         width: 610px;
         float: left;
         padding-right: 40px;
-        border-bottom: 1px solid rgb(230, 230, 230);
+        margin-bottom: 100px;
+        p{
+            font-size: 1.3em;
+            line-height: 1.6em;
+            color: $grey;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
         a{
             color: $orangeD;
             font-size: 1.2em;
             cursor: pointer;
             text-decoration: none;
             font-weight: bold;
-            width: 50%;
+            margin-right: 40px;
             float: left;
+            border-bottom: 2px $orangeD solid; 
         }
     }
     .stack{
-        // border-left: 1px solid rgb(230, 230, 230);
-        border-bottom: 1px solid rgb(230, 230, 230);
         padding-left: 40px;
         width: 300px;
         float: right;
         ul{
             margin-top: 40px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             li{
                 font-size: 1.3em;
                 line-height: 1.6em;
@@ -54,6 +60,40 @@
             cursor: pointer;
             font-style: italic;
             font-weight: bold;
+        }
+    }
+    .table-of-content{
+        width: 100%;
+        background-color: #fafafa;
+        clear: both;
+        margin-top: 40px;
+        margin-bottom: 100px;
+        padding: 40px;
+        h1{
+            margin-bottom: 40px;
+        }
+        ol{
+            list-style-type: decimal;
+            padding-left: 40px;
+            li{
+                font-size: 1.3em;
+                line-height: 2em;
+                font-style: italic;
+                color: $grey;
+                span{
+                    cursor: pointer;
+                    color: $orangeD;
+                    margin-left: 10px;
+                }
+                span:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .article-text{
+        p{
+            margin-bottom: 0;
         }
     }
 }
