@@ -4,19 +4,11 @@ $orangeL: #fa7e19;
 // $orangeD: #20c1bd;
 $yellow: #ffce64;
 $dark: #2D4059;
-$grey: rgba(0, 0, 0, 0.746);
-
-// $orangeD: #01ffad;
-// $orangeL: #01ffe3; 
- 
-// $orangeD: #01c9ff;
-// $orangeL : #01fffd;
-
-// $orangeD: #a401ff;
-// $orangeL : #d501ff;
+$grey: rgba(0, 0, 0, 0.69);
 
 $shadow: 3px 4px 14px 1px darken($orangeD, 3);
 
+$m: 'Merriweather', serif;
 $f: Karla;
 
 @font-face {
