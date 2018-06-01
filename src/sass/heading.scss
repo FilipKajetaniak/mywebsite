@@ -5,7 +5,7 @@
     font-family: $f;
     .resizable{
         font-size: 16px;
-        width: 455px;
+        width: 430px;
     }
     nav{
         width: 380px;
@@ -34,8 +34,9 @@
     p{
         margin-top: 40px;
         margin-bottom: 50px;
-        font-size: 1.3em;
-        line-height: 2em;
+        font-family: $m;
+        font-size: 1.1em;
+        line-height: 2.5em;
     }
     button{
         font-size: 1.3em;

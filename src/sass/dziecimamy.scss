@@ -25,9 +25,9 @@
         padding-right: 40px;
         margin-bottom: 100px;
         p{
-            font-size: 1.2em;
-            line-height: 2em;
-            color: $grey;
+            font-size: 1.1em;
+            line-height: 2.5em;
+            color: black;
             margin-top: 40px;
             margin-bottom: 40px;
             font-family: $m;
@@ -56,9 +56,9 @@
             margin-top: 40px;
             margin-bottom: 40px;
             li{
-                font-size: 1.2em;
-                line-height: 2em;
-                color: $grey;
+                font-size: 1.1em;
+                line-height: 2.5em;
+                color: black;
                 font-family: $m;
             }
         }
@@ -85,7 +85,6 @@
             li{
                 font-size: 1.3em;
                 line-height: 2em;
-                font-style: italic;
                 color: $grey;
                 span{
                     cursor: pointer;
@@ -108,13 +107,13 @@
         ul{
             margin-bottom: 20px;
             font-family: $m;
-            color: $grey;
+            color: black;
             b{
                 color: black;
             }
             li{
-                font-size: 1.2em;
-                line-height: 2.2em;
+                font-size: 1.1em;
+                line-height: 3em;
             }
         }
         h1{
