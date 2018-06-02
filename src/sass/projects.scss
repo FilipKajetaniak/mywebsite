@@ -31,7 +31,6 @@
     .project-text{
         position: absolute;
         overflow: hidden;
-        // width: 420px;
     }
     .project-icons{
         position: absolute;
@@ -94,6 +93,9 @@
         font-size: 1.3em;
         line-height: 1.7em;
     }
+}
+.project:last-of-type{
+    margin-bottom: 0;
 }
 .project:hover{
     .label{
