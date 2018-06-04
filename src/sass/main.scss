@@ -7,6 +7,8 @@
 @import 'heading';
 @import 'dziecimamy';
 @import 'portfolio';
+@import 'stock';
+@import 'novak';
 
 html, body{
     height: 100%;
@@ -52,6 +54,7 @@ footer{
     width: 100%;
     max-width: 810px;
     margin: 0 auto;
+    clear: both;
     color: $grey;
     padding: 20px 0;
     font-family: $f;
