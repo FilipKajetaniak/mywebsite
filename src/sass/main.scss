@@ -9,6 +9,7 @@
 @import 'portfolio';
 @import 'stock';
 @import 'novak';
+@import 'media_queries';
 
 html, body{
     height: 100%;
@@ -59,6 +60,14 @@ footer{
     padding: 20px 0;
     font-family: $f;
     position: relative;
+    @include medium {
+        padding: 20px 30px 20px 30px;
+        font-size: 15px;
+    }
+    @include mobile {
+        padding: 20px 10px 20px 10px;
+        font-size: 15px;
+    }
     i{
         color: $grey;
         text-decoration: none;
@@ -71,5 +80,11 @@ footer{
         position: absolute;
         right: 0;
         bottom: 20px;
+        @include medium {
+            right: 30px;
+        }
+        @include mobile {
+            right: 10px;
+        }
     }
 }

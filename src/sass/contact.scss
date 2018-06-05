@@ -1,7 +1,16 @@
+@import 'media_queries';
+
 .contact{
     font-family: $f;
     padding: 100px 0;
     height: 101vh;
+    @include medium {
+        padding: 100px 30px 100px 30px;
+        font-size: 15px;
+    }
+    @include mobile {
+        padding: 100px 10px 100px 10px;
+    }
     h2{
         font-family: $m;
         font-size: 1.1em;
