@@ -19,8 +19,9 @@
             font-size: 15px;
         }
         @include mobile {
-            font-size: 15px;
+            font-size: 14px;
             width: 100%;
+            // max-width: 250px;
         }
     }
     nav{
@@ -37,11 +38,11 @@
     }
 
     .hello{
-        margin-top: 100px;
+        margin-top: 60px;
         font-size: 2em;
         font-weight: bold;
         @include mobile {
-            font-size: 1.5em;
+            font-size: 7vw;
             width: 100%;
         }
     }
@@ -51,8 +52,10 @@
         margin-left: -6px;
         font-weight: bold;
         @include mobile {
-            font-size: 4em;
+            font-size: 21vw;
             width: 100%;
+            margin-left: -4.5px;
+            white-space: nowrap;
         }
     }
     p{
@@ -61,6 +64,11 @@
         font-family: $m;
         font-size: 1.1em;
         line-height: 2.5em;
+        @include mobile {
+            margin-top: 8vw;
+            width: 100%;
+            max-width: 260px;
+        }
     }
     button{
         font-size: 1.3em;
