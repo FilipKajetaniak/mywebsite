@@ -12,6 +12,24 @@
     font-family: $f;
     overflow: hidden;
     clear: both;
+    div{
+        @include mobile {
+            display: none;
+        }
+    }
+    i{  
+        display: none;
+        font-size: 1.4em;
+        cursor: pointer;
+        line-height: 60px;
+        transition: 300ms all cubic-bezier(.85,.05,.2,.98);
+        @include mobile {
+            display: inline-block;
+        }
+    }
+    .open-menu{
+        transform: rotate(180deg);
+    }
     .menu-item{
         padding-right: 30px;
         cursor: pointer;
