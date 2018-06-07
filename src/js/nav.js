@@ -1,3 +1,5 @@
+import updateHash from './router';
+
 const about = {
     element: document.getElementById('about'),
     left: '50px',
@@ -37,10 +39,6 @@ const menuFadeIn = () => {
     menuItems.forEach((item) => {
         item.style.opacity = '1';
     });
-};
-
-const updateThisPage = () => {
-
 };
 
 const hideMobileMenu = () => {
@@ -116,7 +114,6 @@ const switchLanguage = () => {
         contact.width = '74px';
         contact.hash = 'kontakt';
         resetLine();
-        updateThisPage();
     } else {
         lang.classList.remove('pl-active');
         lang.classList.add('en-active');
@@ -138,8 +135,8 @@ const switchLanguage = () => {
         contact.width = '72px';
         contact.hash = 'contact';
         resetLine();
-        updateThisPage();
     }
+    updateHash(language);
 };
 const moveLine = (e) => {
     changeStyles(e.target.id);

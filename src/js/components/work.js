@@ -1,3 +1,5 @@
+import addListeners from '../article';
+
 const createProjects = (element, lang) => {
     const container = document.createElement('div');
     container.classList.add('content');
@@ -83,5 +85,6 @@ const createProjects = (element, lang) => {
         <i class="fab fa-wordpress-simple"></i><div class="label">Wordpress</div>
         </div>
         <div class="project-img"></div>`;
+    addListeners();
 };
 export default createProjects;
