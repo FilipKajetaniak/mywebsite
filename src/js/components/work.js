@@ -33,7 +33,7 @@ const createProjects = (element, lang) => {
     dziecimamy.innerHTML = `
         <div class="project-text">
         <h1 class="dziecimamy"><i class="fas fa-arrow-right"></i>Dziecimamy</h1>
-        <h3>www.dziecimamy.com</h3>
+        <h3>dziecimamy.com</h3>
         <p>
             SEO friendly single page<br>
             application blog written<br>
@@ -47,7 +47,7 @@ const createProjects = (element, lang) => {
     kajetaniak.innerHTML = `
         <div class="project-text">
         <h1 class="kajetaniak"><i class="fas fa-arrow-right"></i>My portfolio</h1>
-        <h3>www.kajetaniak.com</h3>
+        <h3>kajetaniak.pl</h3>
         <p>
             My portfolio website<br>
             written with vanilla JS.
@@ -60,7 +60,7 @@ const createProjects = (element, lang) => {
     stock.innerHTML = `
         <div class="project-text">
         <h1 class="stock"><i class="fas fa-arrow-right"></i>Boards stock</h1>
-        <h3>www.kajetaniak.com/boardstock</h3>
+        <h3>kajetaniak.pl/boardstock</h3>
         <p>
         Simple Vue.js app<br>
         for keeping track of<br>
@@ -75,7 +75,7 @@ const createProjects = (element, lang) => {
     novak.innerHTML = `
         <div class="project-text">
         <h1 class="novak"><i class="fas fa-arrow-right"></i>Novak contractors</h1>
-        <h3>www.novakcontractors.co.uk</h3>
+        <h3>novakcontractors.co.uk</h3>
         <p>
         Wordpress website<br>
         renovation.

@@ -18,7 +18,7 @@
         height: 400px;
         background-color: white;
         position: absolute;
-        left: 480px;
+        left: 405px;
     }
     .clicked{
         animation-name: image;
@@ -186,13 +186,13 @@
 @keyframes image {
     0% {
         top: 100px;
-        left: 480px;
+        left: 405px;
         width: 540px;
         height: 400px;
     }
     50% {
         top: 100px;
-        left: 480px;
+        left: 405px;
         width: 910px;
         height: 400px;
     }
