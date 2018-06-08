@@ -12,6 +12,7 @@
     font-family: $f;
     overflow: hidden;
     clear: both;
+    transition: all 100ms cubic-bezier(.84,.02,.24,1);
     div{
         @include mobile {
             display: none;

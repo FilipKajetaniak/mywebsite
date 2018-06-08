@@ -19,15 +19,26 @@ const contact = {
     hash: 'contact',
 };
 
-
 const line = document.getElementById('underline');
 const lang = document.getElementById('lang');
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuItems = Array.from(document.getElementsByClassName('menu-item'));
+const navBar = document.querySelector('.navbar');
 
 let active = location.hash.slice(1);
 let language = 'en';
+
+const hideNav = () => {
+    navBar.style.transform = 'translateX(25px)';
+    navBar.style.opacity = '0';
+    navBar.style.visibility = 'hidden';
+};
+const showNav = () => {
+    navBar.style.visibility = 'visible';
+    navBar.style.opacity = '1';
+    navBar.style.transform = 'translateX(0px)';
+};
 
 const menuFadeOut = () => {
     menuItems.forEach((item) => {
@@ -195,6 +206,8 @@ const nav = {
     setActive,
     updateLine,
     getLang,
+    hideNav,
+    showNav,
 };
 
 export default nav;

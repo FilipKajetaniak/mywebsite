@@ -19,6 +19,10 @@ body{
     overflow-x: hidden;
 }
 
+.fade{
+    opacity: 0;
+}
+
 .content{
     width: 100%;
     margin: 0 auto;
@@ -31,7 +35,6 @@ body{
 
 b{
     font-weight: bold;
-    // color: $orangeD;
 }
 .slot{
     transition: all 100ms cubic-bezier(.84,.02,.24,1);
@@ -68,10 +71,13 @@ footer{
     max-width: 810px;
     margin: 0 auto;
     clear: both;
-    color: $grey;
+    color: rgb(212, 212, 212);
     padding: 20px 0;
     font-family: $f;
     position: relative;
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+    transition-delay: 200ms;
     @include medium {
         padding: 20px 30px 20px 30px;
         font-size: 15px;
@@ -80,9 +86,10 @@ footer{
         display: none;
     }
     i{
-        color: $grey;
+        color: rgb(212, 212, 212);
         text-decoration: none;
-        margin-right: 10px;
+        margin-right: 12px;
+        font-size: 1.2em;
     }
     i:hover{
         color: rgb(80, 80, 80);
@@ -91,6 +98,8 @@ footer{
         position: absolute;
         right: 0;
         bottom: 20px;
+        letter-spacing: 1px;
+        font-size: 1.25em;
         @include medium {
             right: 30px;
         }

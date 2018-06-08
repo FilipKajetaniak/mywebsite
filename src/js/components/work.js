@@ -75,7 +75,8 @@ const createProjects = (element, lang) => {
         <h3>kajetaniak.pl</h3>
         <p>
             Moje portfolio<br>
-            napisane w czystym JS.
+            napisane w<br>
+            czystym JS.
         </p>
         </div>
         <div class="project-icons">

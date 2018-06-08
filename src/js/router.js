@@ -66,6 +66,11 @@ const router = () => {
         nav.updateLine('work');
         return;
     }
+    if (url === '') {
+        nav.hideNav();
+    } else {
+        nav.showNav();
+    }
     nav.setActive(url);
     nav.updateLine(url);
 };
