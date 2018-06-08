@@ -95,6 +95,9 @@
         margin-left: 0;
         padding: 0 30px 0 30px;
     }
+    @include mobile {
+        padding: 0 20px 0 20px;
+    }    
 }
 .mobile-menu{
     display: none;

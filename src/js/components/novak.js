@@ -2,6 +2,7 @@ const createNovak = (element) => {
     const container = document.createElement('div');
     container.classList.add('content');
     const article = document.createElement('article');
+    article.classList.add('project-article');
     article.classList.add('novak-article');
     container.appendChild(article);
     const image = document.createElement('div');

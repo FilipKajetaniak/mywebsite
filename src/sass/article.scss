@@ -1,0 +1,133 @@
+@import 'media_queries';
+
+.project-article{
+    padding-top: 60px;
+    font-family: $f;
+    @include medium {
+        padding: 30px 30px 0 30px;
+        font-size: 15px;
+        line-height: 2.2em;
+    }
+    @include mobile {
+        padding: 60px 20px 0 20px;
+        line-height: 1.8em;
+    }
+    h1{
+        font-size: 2em;
+        font-weight: bold;
+        line-height: 1.4em;
+    }
+    p{
+        font-size: 1.1em;
+        line-height: 2.5em;
+        letter-spacing: 0.5px;
+        color: black;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+    .article-img{
+        height: 450px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 50px;
+        @include mobile {
+           width: 100%;
+           height: 250px;
+        }
+    }
+    .project-description{
+        width: 560px;
+        float: left;
+        padding-right: 40px;
+        margin-bottom: 100px;
+        @include mobile {
+            width: 100%;
+         }
+        p{
+            font-size: 1.1em;
+            line-height: 2.5em;
+            color: black;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-family: $m;
+        }
+        a{
+            color: $orangeD;
+            font-size: 1.3em;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 40px;
+            float: left;
+            box-shadow: inset 0 -2px 0 $orangeD;
+            transition: all 150ms ease-in-out;
+            @include mobile {
+                margin-top: 20px;
+            }
+        }
+        a:hover{
+            color: white;
+            box-shadow: inset 0 -2em 0 $orangeD;
+        }
+    }
+    .stack{
+        padding-left: 40px;
+        width: 250px;
+        float: right;
+        @include medium {
+            width: 100%;
+            padding-left: 0;
+         }
+        ul{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            li{
+                font-size: 1.1em;
+                line-height: 2.5em;
+                color: black;
+                font-family: $m;
+            }
+        }
+        span{
+            color: $orangeD;
+            font-size: 1.3em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    }
+    .article-text{
+        margin-bottom: 100px;
+        clear: both;
+        p{
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-family: $m;
+        }
+        ul{
+            margin-bottom: 20px;
+            font-family: $m;
+            color: black;
+            b{
+                color: black;
+            }
+            li{
+                font-size: 1.1em;
+                margin-bottom: 20px;
+            }
+        }
+        h1{
+            margin: 0 0 60px 0;
+            padding-top: 80px;
+        }
+        a{
+            color: $orangeD;
+            cursor: pointer;
+            font-style: italic;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}

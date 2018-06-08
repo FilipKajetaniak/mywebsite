@@ -2,6 +2,7 @@ const createStock = (element) => {
     const container = document.createElement('div');
     container.classList.add('content');
     const article = document.createElement('article');
+    article.classList.add('project-article');
     article.classList.add('stock-article');
     container.appendChild(article);
     const image = document.createElement('div');
