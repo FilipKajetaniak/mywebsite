@@ -1,7 +1,7 @@
 const createAbout = (element, lang) => {
     const h1 = document.createElement('h1');
     const p1 = document.createElement('p');
-    h1.innerText = lang === 'en' ? 'In a nutshell 🥜' : 'W skrócie ⏱️';
+    h1.innerText = lang === 'en' ? 'In a nutshell 🥜' : 'W skrócie o mnie 👦🏻';
     p1.innerText = lang === 'en' ? "My name is Filip Kajetaniak and I'm looking for a junior front-end web developer position. I'm 22 years old. I'm based in Warsaw (but I'm willing to move if necessary). I design and build web apps with HTML, CSS, JavaScript and Vue.js." :
         'Nazywam się Filip Kajetaniak i szukam pracy jako junior front-end developer. Mam 22 lata i mieszkam w Warszawie (choć zawsze mogę się wyprowadzić jeśli to konieczne). Projektuje i tworze strony i aplikacje internetowe w JavaScripcie i Vue.';
     const h2 = document.createElement('h1');
