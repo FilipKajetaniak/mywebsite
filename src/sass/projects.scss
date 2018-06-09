@@ -25,7 +25,7 @@
         animation-duration: 400ms;
         top: 50px;
         left: 0;
-        width: 910px;
+        width: 810px;
         height: 450px;
     }
     .project-text{
@@ -111,6 +111,8 @@
         -moz-box-shadow: -25px 25px 52px -3px #002d759d;
         box-shadow: -25px 25px 52px -3px #002d759d;
         background-image: url('~/img/dziecimamy.png');
+        background-size: cover;
+        background-position: -100px;
     }
 }
 
@@ -158,6 +160,8 @@
         -moz-box-shadow: -25px 25px 52px -3px #81061b9d;
         box-shadow: -25px 25px 52px -3px #81061b9d;
         background-image: url('~/img/portfolio.png');
+        background-size: cover;
+        background-position: -100px;
     }
 }
 
@@ -169,6 +173,8 @@
         -moz-box-shadow: -25px 25px 52px -3px #1211189d;
         box-shadow: -25px 25px 52px -3px #1211189d;
         background-image: url('~/img/stock.png');
+        background-size: cover;
+        background-position: -100px;
     }
 }
 
@@ -180,6 +186,8 @@
         -moz-box-shadow: -25px 25px 52px -3px #1211189d;
         box-shadow: -25px 25px 52px -3px #001b3f9d;
         background-image: url('~/img/novak.png');
+        background-size: cover;
+        background-position: -100px;
     }
 }
 
@@ -189,17 +197,20 @@
         left: 405px;
         width: 540px;
         height: 400px;
+        background-position: -100px;
     }
     50% {
         top: 100px;
         left: 405px;
-        width: 910px;
+        width: 810px;
         height: 400px;
+        background-position: -50px;
     }
     100% {
         top: 50px;
         left: 0;
-        width: 910px;
+        width: 810px;
         height: 450px;
+        background-position: 0px;
     }
 }

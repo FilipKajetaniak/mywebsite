@@ -56,15 +56,23 @@ b{
 
 .cover-dziecimamy{
     background-image: url('~/img/dziecimamy.png');
+    background-size: 810px 450px;
+    background-position: center;
 }
 .cover-kajetaniak{
-    background-image: url('~/img/portfolio.png');    
+    background-image: url('~/img/portfolio.png');
+    background-size: cover;
+    background-position: center; 
 }
 .cover-stock{
-    background-image: url('~/img/stock.png');   
+    background-image: url('~/img/stock.png');
+    background-size: cover;
+    background-position: center;   
 }
 .cover-novak{
-    background-image: url('~/img/novak.png');   
+    background-image: url('~/img/novak.png');
+    background-size: cover;
+    background-position: center;
 }
 
 footer{
@@ -100,7 +108,7 @@ footer{
         right: 0;
         bottom: 20px;
         letter-spacing: 1px;
-        font-size: 1.25em;
+        font-size: 1.1em;
         @include medium {
             right: 30px;
         }
