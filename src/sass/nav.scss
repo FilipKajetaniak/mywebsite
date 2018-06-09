@@ -53,6 +53,10 @@
         bottom: 0;
         background-color: $orangeD;
         transition: all 80ms ease-out;
+        margin-left: 50px;
+        @include medium {
+            margin-left: 30px;
+        }
     }
     #lang{
         position: absolute;

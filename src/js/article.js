@@ -12,12 +12,12 @@ const addListeners = () => {
             const parent = e.target.parentElement.parentElement;
             cover.className = '';
             cover.classList.add(`cover-${element}`);
-            zenscroll.to(parent, 400);
+            zenscroll.to(parent, 300);
             parent.classList.add(`${element}-clicked`);
             parent.querySelector('.project-img').classList.add('clicked');
-            setTimeout(() => { cover.style.display = 'block'; }, 400);
-            setTimeout(() => { loadArticle(element); }, 600);
-            setTimeout(() => { cover.style.display = 'none'; }, 900);
+            setTimeout(() => { cover.style.display = 'block'; }, 300);
+            setTimeout(() => { loadArticle(element); }, 500);
+            setTimeout(() => { cover.style.display = 'none'; }, 800);
         });
     });
 };

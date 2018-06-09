@@ -1,3 +1,5 @@
+@import 'media_queries';
+
 .projects{
     height: auto;
     width: 100%;
@@ -13,24 +15,81 @@
     padding-right: 0;
     position: relative;
     overflow: hidden;
+    @include medium {
+        height: 715px;
+        padding: 0;
+    }
     .project-img{
         width: 540px;
         height: 400px;
         background-color: white;
         position: absolute;
         left: 405px;
+        @include medium {
+            width: 540px;
+            height: 400px;
+            background-color: white;
+            position: absolute;
+            left: 50%; 
+            margin-left: -270px;
+            top: 315px;
+            background-position: center !important;
+        }
+        @include small-medium {
+            width: 440px;
+            height: 400px;
+            background-color: white;
+            position: absolute;
+            left: 50%; 
+            margin-left: -220px;
+            top: 315px;
+        }
+        @include mobile {
+            
+        }
     }
     .clicked{
         animation-name: image;
-        animation-duration: 400ms;
+        animation-duration: 300ms;
         top: 50px;
         left: 0;
         width: 810px;
         height: 450px;
+        @include medium {
+            width: 100%;
+            left: 0;
+            margin-left: 0;
+            top: 60px;
+            animation-name: image-medium;
+        }
+        @include small-medium {
+            width: 100%;
+            left: 0;
+            margin-left: 0;
+            top: 60px;
+            animation-name: image-small-medium;
+        }
     }
     .project-text{
         position: absolute;
         overflow: hidden;
+        p{
+            width: 240px;
+            @include medium {
+                width: 100%;
+            }
+        }
+        @include medium {
+            width: 540px;
+            left: 50%;
+            margin-left: -270px;
+            top: 50px;
+        }
+        @include small-medium {
+            width: 440px;
+            left: 50%; 
+            margin-left: -220px;
+        }
     }
     .project-icons{
         position: absolute;
@@ -38,6 +97,12 @@
         left: 100px;
         color: white;
         font-size: 2em;
+        @include medium {
+            display: none;
+        }
+        @include mobile {
+            display: none;
+        }
         i{
             margin-right: 10px;
             transition: 200ms all ease-in-out;
@@ -121,7 +186,7 @@
         -webkit-box-shadow: -25px 25px 102px -3px #002d7500 !important;
         -moz-box-shadow: -25px 25px 102px -3px #002d7500 !important;
         box-shadow: -25px 25px 102px -3px #002d7500 !important;
-        transition: 400ms all;
+        transition: 300ms all;
     }
 }
 
@@ -130,7 +195,7 @@
         -webkit-box-shadow: -25px 25px 102px -3px #81061b00 !important;
         -moz-box-shadow: -25px 25px 102px -3px #81061b00 !important;
         box-shadow: -25px 25px 102px -3px #81061b00 !important;
-        transition: 400ms all;
+        transition: 300ms all;
     }
 }
 
@@ -139,7 +204,7 @@
         -webkit-box-shadow: -25px 25px 102px -3px #12111800 !important;
         -moz-box-shadow: -25px 25px 102px -3px #12111800 !important;
         box-shadow: -25px 25px 102px -3px #12111800 !important;
-        transition: 400ms all;
+        transition: 300ms all;
     }
 }
 
@@ -148,7 +213,7 @@
         -webkit-box-shadow: -25px 25px 102px -3px #001b3f00 !important;
         -moz-box-shadow: -25px 25px 102px -3px #001b3f00 !important;
         box-shadow: -25px 25px 102px -3px #001b3f00 !important;
-        transition: 400ms all;
+        transition: 300ms all;
     }
 }
 
@@ -212,5 +277,53 @@
         width: 810px;
         height: 450px;
         background-position: 0px;
+    }
+}
+
+@keyframes image-medium {
+    0% {
+        width: 540px;
+        height: 400px;
+        left: 50%; 
+        margin-left: -270px;
+        top: 315px
+    }
+    50% {
+        width: 540px;
+        height: 400px;
+        left: 50%; 
+        margin-left: -270px;
+        top: 60px
+    }
+    100% {
+        width: 100%;
+        height: 450px;
+        left: 0; 
+        margin-left: 0px;
+        top: 60px;
+    }
+}
+
+@keyframes image-small-medium {
+    0% {
+        width: 440px;
+        height: 400px;
+        left: 50%; 
+        margin-left: -220px;
+        top: 315px
+    }
+    50% {
+        width: 440px;
+        height: 400px;
+        left: 50%; 
+        margin-left: -220px;
+        top: 60px
+    }
+    100% {
+        width: 100%;
+        height: 450px;
+        left: 0; 
+        margin-left: 0px;
+        top: 60px;
     }
 }

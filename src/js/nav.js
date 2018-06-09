@@ -2,19 +2,19 @@ import updateHash from './router';
 
 const about = {
     element: document.getElementById('about'),
-    left: '50px',
+    left: '0px',
     width: '54px',
     hash: 'about',
 };
 const work = {
     element: document.getElementById('work'),
-    left: '134px',
+    left: '84px',
     width: '47px',
     hash: 'work',
 };
 const contact = {
     element: document.getElementById('contact'),
-    left: '211px',
+    left: '161px',
     width: '72px',
     hash: 'contact',
 };
@@ -89,7 +89,7 @@ const changeStyles = (element) => {
 
 const resetLine = () => {
     if (!active) {
-        line.style.left = '50px';
+        line.style.left = '0px';
         line.style.width = '0px';
     } else if (active === 'about' || active === 'omnie') {
         line.style.left = about.left;
@@ -115,13 +115,13 @@ const switchLanguage = () => {
             contact.element.innerText = 'Kontakt';
             menuFadeIn();
         }, 200);
-        about.left = '50px';
+        about.left = '0px';
         about.width = '64px';
         about.hash = 'omnie';
-        work.left = '144px';
+        work.left = '94px';
         work.width = '74px';
         work.hash = 'projekty';
-        contact.left = '249px';
+        contact.left = '199px';
         contact.width = '74px';
         contact.hash = 'kontakt';
         resetLine();
@@ -136,13 +136,13 @@ const switchLanguage = () => {
             contact.element.innerText = 'Contact';
             menuFadeIn();
         }, 200);
-        about.left = '50px';
+        about.left = '0px';
         about.width = '54px';
         about.hash = 'about';
-        work.left = '134px';
+        work.left = '84px';
         work.width = '47px';
         work.hash = 'work';
-        contact.left = '211px';
+        contact.left = '161px';
         contact.width = '72px';
         contact.hash = 'contact';
         resetLine();
