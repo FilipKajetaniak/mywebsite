@@ -1,13 +1,13 @@
 const slot = document.getElementById('slot');
 
-const renderArticle = (renderComponent) => {
+const renderArticle = (renderComponent, lang) => {
     slot.style.opacity = '0';
     setTimeout(() => {
         if (slot.firstChild) {
             slot.removeChild(slot.firstChild);
         }
         window.scrollTo(0, 0);
-        renderComponent(slot);
+        renderComponent(slot, lang);
     }, 100);
     setTimeout(() => {
         slot.style.opacity = '1';
@@ -17,7 +17,7 @@ const renderArticle = (renderComponent) => {
 
 const render = (renderComponent, lang, type) => {
     if (type === 'article') {
-        renderArticle(renderComponent);
+        renderArticle(renderComponent, lang);
         return;
     }
     slot.style.opacity = '0';

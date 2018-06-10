@@ -1,4 +1,4 @@
-const createPortfolio = (element) => {
+const createPortfolio = (element, lang) => {
     const container = document.createElement('div');
     container.classList.add('content');
     const article = document.createElement('article');
@@ -9,11 +9,15 @@ const createPortfolio = (element) => {
     image.classList.add('article-img');
     const description = document.createElement('div');
     description.classList.add('project-description');
-    description.innerHTML = `
-      <h1>Portfolio &mdash;</h1>
-      <p>Super simple SPA website with hash based router written  with vanilla JS.
-      </p>
-      <a href="https://github.com/FilipKajetaniak/dziecimamy" target="_blank">GitHub</a>`;
+    description.innerHTML = lang === 'en' ? `
+        <h1>Portfolio &mdash;</h1>
+        <p>Super simple SPA website with hash based router written  with vanilla JS.
+        </p>
+        <a href="https://github.com/FilipKajetaniak/dziecimamy" target="_blank">GitHub</a>` :
+        `<h1>Portfolio &mdash;</h1>
+        <p>Prosta strona SPA z routerem opartym o # napisana w czystym JS.
+        </p>
+        <a href="https://github.com/FilipKajetaniak/dziecimamy" target="_blank">GitHub</a>`;
     const stack = document.createElement('div');
     stack.classList.add('stack');
     stack.innerHTML = `
@@ -25,9 +29,10 @@ const createPortfolio = (element) => {
     const articleText = document.createElement('div');
     articleText.classList.add('article-text');
     const h1 = document.createElement('h1');
-    h1.innerText = 'About the project';
+    h1.innerText = lang === 'en' ? 'About the project' : 'O projekcie';
     const p1 = document.createElement('p');
-    p1.innerText = 'This is my most recent project so far. I built this website to show off my work and tell something about myself. I decided to go with super simple and modest design. The UI is simple, fast, and lightweight. I used pure JS and wrote everything (except the scrolling function) from scratch.';
+    p1.innerText = lang === 'en' ? 'This is my most recent project so far. I built this website to show off my work and tell something about myself. I decided to go with super simple and modest design. The UI is simple, fast, and lightweight. I used pure JS and wrote everything (except the scrolling function) from scratch.' :
+        'To jest mój najnowszy projekt. Napisałem tą stronę żeby pokazać swoje prace i powiedzieć coś o sobie. Zdecydowałem się na bardzo prosty i skromny design z lekkim i szybkim UI. Wszystko (oprócz funkcji do scrollowania) napisałem od zera w czystym JS.';
     article.appendChild(image);
     article.appendChild(description);
     article.appendChild(stack);

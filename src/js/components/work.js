@@ -32,7 +32,7 @@ const createProjects = (element, lang) => {
 
     dziecimamy.innerHTML = lang === 'en' ? `
         <div class="project-text">
-        <h1 class="dziecimamy"><i class="fas fa-arrow-right"></i>Dziecimamy</h1>
+        <h1 class="project#dziecimamy"><i class="fas fa-arrow-right"></i>Dziecimamy</h1>
         <h3>dziecimamy.com</h3>
         <p> SEO friendly single page application blog written with Vue.js. </p>
         </div>
@@ -41,7 +41,7 @@ const createProjects = (element, lang) => {
         </div>
         <div class="project-img"></div>` : `
         <div class="project-text">
-        <h1 class="dziecimamy"><i class="fas fa-arrow-right"></i>Dziecimamy</h1>
+        <h1 class="projekt#dziecimamy"><i class="fas fa-arrow-right"></i>Dziecimamy</h1>
         <h3>dziecimamy.com</h3>
         <p> Przyjazny dla SEO single page application blog napisany w Vue.js.</p>
         </div>
@@ -51,7 +51,7 @@ const createProjects = (element, lang) => {
         <div class="project-img"></div>`;
     kajetaniak.innerHTML = lang === 'en' ? `
         <div class="project-text">
-        <h1 class="kajetaniak"><i class="fas fa-arrow-right"></i>My portfolio</h1>
+        <h1 class="project#portfolio"><i class="fas fa-arrow-right"></i>My portfolio</h1>
         <h3>kajetaniak.pl</h3>
         <p>My portfolio website written with vanilla JS.
         </p>
@@ -61,7 +61,7 @@ const createProjects = (element, lang) => {
         </div>
         <div class="project-img"></div>` : `
         <div class="project-text">
-        <h1 class="kajetaniak"><i class="fas fa-arrow-right"></i>Moje portfolio</h1>
+        <h1 class="projekt#portfolio"><i class="fas fa-arrow-right"></i>Moje portfolio</h1>
         <h3>kajetaniak.pl</h3>
         <p>Moje portfolio napisane w czystym JS.
         </p>
@@ -72,7 +72,7 @@ const createProjects = (element, lang) => {
         <div class="project-img"></div>`;
     stock.innerHTML = lang === 'en' ? `
         <div class="project-text">
-        <h1 class="stock"><i class="fas fa-arrow-right"></i>Boards stock</h1>
+        <h1 class="project#stock"><i class="fas fa-arrow-right"></i>Boards stock</h1>
         <h3>kajetaniak.pl/boardstock</h3>
         <p>Simple Vue.js app for keeping track of stored boards.</p>
         </div>
@@ -81,7 +81,7 @@ const createProjects = (element, lang) => {
         </div>
         <div class="project-img"></div>` : `
         <div class="project-text">
-        <h1 class="stock"><i class="fas fa-arrow-right"></i>Spis desek</h1>
+        <h1 class="projekt#stock"><i class="fas fa-arrow-right"></i>Spis desek</h1>
         <h3>kajetaniak.pl/boardstock</h3>
         <p>Prosta aplikacja w Vue do spisywania ilości desek w magazynie.</p>
         </div>
@@ -91,7 +91,7 @@ const createProjects = (element, lang) => {
         <div class="project-img"></div>`;
     novak.innerHTML = lang === 'en' ? `
         <div class="project-text">
-        <h1 class="novak"><i class="fas fa-arrow-right"></i>Novak contractors</h1>
+        <h1 class="project#novak"><i class="fas fa-arrow-right"></i>Novak contractors</h1>
         <h3>novakcontractors.co.uk</h3>
         <p>Wordpress website renovation.</p>
         </div>
@@ -100,7 +100,7 @@ const createProjects = (element, lang) => {
         </div>
         <div class="project-img"></div>` : `
         <div class="project-text">
-        <h1 class="novak"><i class="fas fa-arrow-right"></i>Novak contractors</h1>
+        <h1 class="projekt#novak"><i class="fas fa-arrow-right"></i>Novak contractors</h1>
         <h3>novakcontractors.co.uk</h3>
         <p>Naprawa strony postawionej na Wordpressie.</p>
         </div>

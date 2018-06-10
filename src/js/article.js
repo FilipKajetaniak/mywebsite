@@ -11,7 +11,7 @@ const addListeners = () => {
             const element = e.target.className;
             const parent = e.target.parentElement.parentElement;
             cover.className = '';
-            cover.classList.add(`cover-${element}`);
+            cover.classList.add(`cover-${element.slice(8)}`);
             zenscroll.to(parent, 300);
             parent.classList.add(`${element}-clicked`);
             parent.querySelector('.project-img').classList.add('clicked');
