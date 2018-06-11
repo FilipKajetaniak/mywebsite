@@ -44,7 +44,6 @@ b{
 }
 
 #cover-img{
-    background-color: aqua;
     position: fixed;
     height: 450px;
     top: 60px;
@@ -52,6 +51,13 @@ b{
     left: 50%;
     margin-left: -405px;
     display: none;
+    @include mobile {
+        width: 100% !important;
+        height: 250px !important;
+        background-size: cover !important;
+        left: 0;
+        margin-left: 0;
+    }
 }
 
 .cover-dziecimamy{

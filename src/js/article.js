@@ -13,7 +13,7 @@ const addListeners = () => {
             cover.className = '';
             cover.classList.add(`cover-${element.slice(8)}`);
             zenscroll.to(parent, 300);
-            parent.classList.add(`${element}-clicked`);
+            parent.classList.add(`${element.slice(8)}-clicked`);
             parent.querySelector('.project-img').classList.add('clicked');
             setTimeout(() => { cover.style.display = 'block'; }, 300);
             setTimeout(() => { loadArticle(element); }, 500);
