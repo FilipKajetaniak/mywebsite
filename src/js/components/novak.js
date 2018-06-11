@@ -13,12 +13,12 @@ const createNovak = (element, lang) => {
         <h1>Novak contractors &mdash;</h1>
         <p>Renovation and slight redesign of Wordpress website.
         </p>
-        <a href="http://www.novakcontractors.co.uk" target="_blank">www.novakcontractors.co.uk</a>
+        <a href="http://www.novakcontractors.co.uk" target="_blank">novakcontractors.co.uk</a>
         <a href="https://github.com/FilipKajetaniak/dziecimamy" target="_blank">GitHub</a>` :
         `<h1>Novak contractors &mdash;</h1>
         <p>Naprawa i redesign strony zbudowanej na Wordpressie.
         </p>
-        <a href="http://www.novakcontractors.co.uk" target="_blank">www.novakcontractors.co.uk</a>
+        <a href="http://www.novakcontractors.co.uk" target="_blank">novakcontractors.co.uk</a>
         <a href="https://github.com/FilipKajetaniak/dziecimamy" target="_blank">GitHub</a>`;
     const stack = document.createElement('div');
     stack.classList.add('stack');
@@ -40,6 +40,10 @@ const createNovak = (element, lang) => {
     article.appendChild(articleText);
     articleText.appendChild(h1);
     articleText.appendChild(p1);
+    const footer = document.createElement('div');
+    footer.classList.add('mobile-footer');
+    footer.innerHTML = lang === 'en' ? `<a onclick="location.hash='#work'"><i class="fas fa-arrow-left"></i> Work</a>` : `<a onclick="location.hash='#projekty'"><i class="fas fa-arrow-left"></i> Projekty</a>`;
+    container.appendChild(footer);
     element.appendChild(container);
 };
 

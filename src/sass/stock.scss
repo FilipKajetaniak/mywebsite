@@ -3,6 +3,11 @@
         background-image: url('~/img/stock.png');
     }
     .project-description{
-        margin-bottom: 0 !important;
+        margin-bottom: 40px !important;
+    }
+    h1{
+        @include medium {
+            padding-top: 0px !important;
+        }
     }
 }

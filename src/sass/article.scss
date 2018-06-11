@@ -46,6 +46,7 @@
         }
         @include mobile {
             padding: 0 20px;
+            margin-bottom: 40px;
         }
         p{
             font-size: 1.1em;
@@ -54,6 +55,9 @@
             margin-top: 40px;
             margin-bottom: 40px;
             font-family: $m;
+            @include mobile {
+                margin-bottom: 0;
+            }
         }
         a{
             color: $orangeD;
@@ -125,6 +129,9 @@
         h1{
             margin: 0 0 60px 0;
             padding-top: 80px;
+            @include mobile {
+                margin: 0 0 30px 0;
+            }
         }
         a{
             color: $orangeD;

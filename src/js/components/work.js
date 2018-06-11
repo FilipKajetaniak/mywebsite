@@ -108,6 +108,10 @@ const createProjects = (element, lang) => {
         <i class="fab fa-wordpress-simple"></i><div class="label">Wordpress</div>
         </div>
         <div class="project-img"></div>`;
+    const footer = document.createElement('div');
+    footer.classList.add('mobile-footer');
+    footer.innerHTML = lang === 'en' ? `<a onclick="location.hash='#contact'">Contact <i class="fas fa-arrow-right"></i></a>` : `<a onclick="location.hash='#kontakt'">Kontakt <i class="fas fa-arrow-right"></i></a>`;
+    container.appendChild(footer);
     addListeners();
 };
 export default createProjects;

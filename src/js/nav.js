@@ -21,6 +21,7 @@ const contact = {
 
 const line = document.getElementById('underline');
 const lang = document.getElementById('lang');
+const mobileLang = document.getElementById('mobile-lang');
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuItems = Array.from(document.getElementsByClassName('menu-item'));
@@ -113,6 +114,9 @@ const switchLanguage = () => {
             about.element.innerText = 'O mnie';
             work.element.innerText = 'Projekty';
             contact.element.innerText = 'Kontakt';
+            mobileMenu.getElementsByTagName('span')[0].innerText = 'O mnie';
+            mobileMenu.getElementsByTagName('span')[1].innerText = 'Projekty';
+            mobileMenu.getElementsByTagName('span')[2].innerText = 'Kontakt';
             menuFadeIn();
         }, 200);
         about.left = '0px';
@@ -134,6 +138,9 @@ const switchLanguage = () => {
             about.element.innerText = 'About';
             work.element.innerText = 'Work';
             contact.element.innerText = 'Contact';
+            mobileMenu.getElementsByTagName('span')[0].innerText = 'About';
+            mobileMenu.getElementsByTagName('span')[1].innerText = 'Work';
+            mobileMenu.getElementsByTagName('span')[2].innerText = 'Contact';
             menuFadeIn();
         }, 200);
         about.left = '0px';
@@ -166,6 +173,10 @@ contact.element.addEventListener('mouseover', (e) => { moveLine(e); });
 contact.element.addEventListener('mouseleave', resetLine);
 
 lang.addEventListener('click', switchLanguage);
+mobileLang.addEventListener('click', () => {
+    switchLanguage();
+    hideMobileMenu();
+});
 
 about.element.addEventListener('click', () => {
     active = 'about';
@@ -183,15 +194,15 @@ contact.element.addEventListener('click', () => {
 
 hamburger.addEventListener('click', openMobileMenu);
 
-mobileMenu.getElementsByTagName('a')[0].addEventListener('click', () => {
+mobileMenu.getElementsByTagName('span')[0].addEventListener('click', () => {
     hideMobileMenu();
     window.location.hash = about.hash;
 });
-mobileMenu.getElementsByTagName('a')[1].addEventListener('click', () => {
+mobileMenu.getElementsByTagName('span')[1].addEventListener('click', () => {
     hideMobileMenu();
     window.location.hash = work.hash;
 });
-mobileMenu.getElementsByTagName('a')[2].addEventListener('click', () => {
+mobileMenu.getElementsByTagName('span')[2].addEventListener('click', () => {
     hideMobileMenu();
     window.location.hash = contact.hash;
 });

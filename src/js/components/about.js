@@ -67,6 +67,10 @@ const createAbout = (element, lang) => {
     <div><span class="technology" style="opacity: 0.2">Node.js</span><div><span>Bez dokumentacji bym sie strasznie meczyl</span></div></div>
     <h4>( Najedz myszka po wiecej szczegolow )</h4>
   `;
+    const footer = document.createElement('div');
+    footer.classList.add('mobile-footer');
+    footer.innerHTML = lang === 'en' ? `<a onclick="location.hash='#work'">Work <i class="fas fa-arrow-right"></i></a>` : `<a onclick="location.hash='#projekty'">Projekty <i class="fas fa-arrow-right"></i></a>`;
+    container.appendChild(footer);
 };
 
 export default createAbout;

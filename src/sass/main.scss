@@ -123,3 +123,25 @@ footer{
         }
     }
 }
+
+.mobile-footer{
+    display: none;
+    width: 100%;
+    font-family: $f;
+    font-size: 1.4em;
+    padding: 20px;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: $orangeD;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    i{
+        font-size: 0.9em;
+        margin-left: 5px;
+    }
+    @include mobile {
+        display: block;
+    }
+}

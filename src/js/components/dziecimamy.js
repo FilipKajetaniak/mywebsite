@@ -1,4 +1,4 @@
-const createDziecimamy = (element) => {
+const createDziecimamy = (element, lang) => {
     const container = document.createElement('div');
     container.classList.add('content');
     const article = document.createElement('article');
@@ -134,6 +134,11 @@ const createDziecimamy = (element) => {
     // może i czwóreczkę się wrzuci
     articleText.appendChild(h5);
     articleText.appendChild(p5);
+
+    const footer = document.createElement('div');
+    footer.classList.add('mobile-footer');
+    footer.innerHTML = lang === 'en' ? `<a onclick="location.hash='#work'"><i class="fas fa-arrow-left"></i> Work</a>` : `<a onclick="location.hash='#projekty'"><i class="fas fa-arrow-left"></i> Projekty</a>`;
+    container.appendChild(footer);
     element.appendChild(container);
 };
 

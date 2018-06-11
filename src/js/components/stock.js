@@ -41,7 +41,10 @@ const createStock = (element, lang) => {
     article.appendChild(articleText);
     articleText.appendChild(h1);
     articleText.appendChild(p1);
-    element.appendChild(container);
+    const footer = document.createElement('div');
+    footer.classList.add('mobile-footer');
+    footer.innerHTML = lang === 'en' ? `<a onclick="location.hash='#work'"><i class="fas fa-arrow-left"></i> Work</a>` : `<a onclick="location.hash='#projekty'"><i class="fas fa-arrow-left"></i> Projekty</a>`;
+    container.appendChild(footer);
     element.appendChild(container);
 };
 
