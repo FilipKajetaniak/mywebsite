@@ -9,7 +9,7 @@ const createContact = (element, lang) => {
         <h2>Many thanks for stopping by! I hope you enjoyed my work. <br>
         Hit me up, I'd be happy to help you out!
         </h2>
-        <a href="mailto:hello@kajetaniak.com">filip@kajetaniak.com</a>
+        <a href="mailto:hello@kajetaniak.pl">hello@kajetaniak.pl</a>
         <h2>Or you can find me here:</h2>
         <div class="social">
         <a href="https://m.me/filip.kajetaniak"><i class="fab fa-facebook-messenger"></i></a>
@@ -17,17 +17,17 @@ const createContact = (element, lang) => {
         <a href="https://codepen.io/FilipKajetaniak/"><i class="fab fa-codepen"></i></a>
         <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>` : `
-        <h1>Przywitaj się 👋</h1>
+        <h1>Napisz cos! 👋</h1>
         <h2>Dzięki, że zajrzałeś! Mam nadzieję, że spodobały Ci się moje prace. <br>
         Pisz śmiało, bardzo chętnie Ci pomogę!
         </h2>
-        <a href="mailto:hello@kajetaniak.com">filip@kajetaniak.com</a>
+        <a href="mailto:hello@kajetaniak.pl">hello@kajetaniak.pl</a>
         <h2>Albo możesz mnie znaleźć tutaj:</h2>
         <div class="social">
         <a href="https://m.me/filip.kajetaniak"><i class="fab fa-facebook-messenger"></i></a>
         <a href="https://github.com/FilipKajetaniak"><i class="fab fa-github"></i></a>
         <a href="https://codepen.io/FilipKajetaniak/"><i class="fab fa-codepen"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/filip-kajetaniak-739588166/"><i class="fab fa-linkedin"></i></a>
         </div>`;
 
     element.appendChild(container);

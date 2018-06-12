@@ -15,8 +15,8 @@ const createDziecimamy = (element, lang) => {
           so search engines can analyze the content.
         </p>
         <a href="https://www.dziecimamy.com" target="_blank">www.dziecimamy.com</a>
-        <a href="https://github.com/FilipKajetaniak/dziecimamy" target="_blank">GitHub</a>` : `
-        <h1>Dziecimamy &mdash;</h1>
+        <a href="https://github.com/FilipKajetaniak/dziecimamy" target="_blank">GitHub</a>` :
+        `<h1>Dziecimamy &mdash;</h1>
         <p>Napisany od zera Single Page Application blog z własnym CMSem. Treści są renderowane po 
         stronie serwera dzięki czemu blog jest przyjazny dla SEO.
         </p>
@@ -37,23 +37,22 @@ const createDziecimamy = (element, lang) => {
     table.appendChild(document.createElement('ol'));
     table.querySelector('h1').innerText = lang === 'en' ? 'Table of content' : 'Spis tresci';
     table.querySelector('ol').innerHTML = lang === 'en' ? `
-      <li><span onClick="zenscroll.to(document.getElementById('features'), 300)">App features</span></li>
-      <li><span onClick="zenscroll.to(document.getElementById('technologies'), 300)">Used technologies</span></li>
-      <li><span onClick="zenscroll.to(document.getElementById('problems'), 300)">Problems I faced</span></li>
-      <li><span onClick="zenscroll.to(document.getElementById('mistakes'), 300)">What I did wrong</span></li>
-      <li><span onClick="zenscroll.to(document.getElementById('changes'), 300)">Upcoming changes</span></li>
-      ` : `
-      <li><span onClick="zenscroll.to(document.getElementById('features'), 300)">Funkcje</span></li>
-      <li><span onClick="zenscroll.to(document.getElementById('technologies'), 300)">Użyte technologie</span></li>
-      <li><span onClick="zenscroll.to(document.getElementById('problems'), 300)">Co sprawialo najwieksze problemy?</span></li>
-      <li><span onClick="zenscroll.to(document.getElementById('mistakes'), 300)">Co zrobilem zle?</span></li>
-      <li><span onClick="zenscroll.to(document.getElementById('changes'), 300)">Co dalej?</span></li>`;
+        <li><span onClick="zenscroll.to(document.getElementById('features'), 300)">App features</span></li>
+        <li><span onClick="zenscroll.to(document.getElementById('technologies'), 300)">Used technologies</span></li>
+        <li><span onClick="zenscroll.to(document.getElementById('problems'), 300)">Problems I faced</span></li>
+        <li><span onClick="zenscroll.to(document.getElementById('mistakes'), 300)">What I did wrong</span></li>
+        <li><span onClick="zenscroll.to(document.getElementById('changes'), 300)">Upcoming changes</span></li>` :
+        `<li><span onClick="zenscroll.to(document.getElementById('features'), 300)">Funkcje</span></li>
+        <li><span onClick="zenscroll.to(document.getElementById('technologies'), 300)">Użyte technologie</span></li>
+        <li><span onClick="zenscroll.to(document.getElementById('problems'), 300)">Co sprawialo najwieksze problemy?</span></li>
+        <li><span onClick="zenscroll.to(document.getElementById('mistakes'), 300)">Co zrobilem zle?</span></li>
+        <li><span onClick="zenscroll.to(document.getElementById('changes'), 300)">Co dalej?</span></li>`;
     const articleText = document.createElement('div');
     articleText.classList.add('article-text');
 
     const h1 = document.createElement('h1');
     h1.id = 'features';
-    h1.innerText = 'Features';
+    h1.innerText = lang === 'en' ? 'Features' : 'Funkcje';
     const p1 = document.createElement('p');
     p1.innerHTML = lang === 'en' ? `
         I believe this app is super cool and let my tell you why.</p>
@@ -114,11 +113,11 @@ const createDziecimamy = (element, lang) => {
 
     const h3 = document.createElement('h1');
     h3.id = 'problems';
-    h3.innerText = lang === 'en' ? 'Problems I had to overcome when developing this app' : 'Przeszkody na jakie natknąłem się pisząc tą aplikację';
+    h3.innerText = lang === 'en' ? 'Problems I had to overcome when developing this app' : 'Przeszkody na jakie natknalem sie piszac ta aplikacje';
     const p3 = document.createElement('p');
     p3.innerHTML = lang === 'en' ? `
         I wasn't very experienced with Vue when I started building this project. At that point I had watched
-        only one online course about Vue and finished one simple project (<a href="https://kajetaniak.com/#stock">This one</a>).
+        only one online course about Vue and finished one simple project (<a href="https://kajetaniak.com/#project#stock">This one</a>).
         I wasn't aware of downsides of single page apps. I didn't know that if your content is being asynchronously
         loaded and then rendered with JavaScript, it's pretty much invisible for Google's web crawlers. So I was 
         pretty depressed when I stumbled upon some JavaScript conference where they mentioned this problem with SPA's.
@@ -130,7 +129,7 @@ const createDziecimamy = (element, lang) => {
         but I decided not to. Firebase doesn't provide the best solutions for advanced queries, authorization and data relationships. I eventually
         had to learn everything on my own by reading their enigmatic docs and other people github repos.` : `
         Kiedy zaczynałem pisać ten projekt nie miałem za dużo doświadczenia z Vue. Skończyłem wtedy tylko jeden kurs online
-        o Vue i skończyłem jeden, prosty projekt (<a href="https://kajetaniak.com/#stock">Ten</a>). Nie wiedziałem wtedy jakie są minusy
+        o Vue i skończyłem jeden, prosty projekt (<a href="https://kajetaniak.com/#projekt#stock">Ten</a>). Nie wiedziałem wtedy jakie są minusy
         SPA. Nie wiedziałem, że jeżeli treść strony jest asynchronicznie pobierana a potem renderowana po stronie klienta jest praktycznie
         niewidoczna dla Googlowych web crawlerów. Kiedy natknąłem się na pewną konferencję o JavaScripcie gdzie dowiedziałem się o wadach SPA
         prawie dostałem depresji. Nie chciałem, żeby blog był nie do znalezienia w wyszukiwarce. To by było nie wporządku. Dlatego zacząłem czytać
@@ -177,16 +176,24 @@ const createDziecimamy = (element, lang) => {
     article.appendChild(articleText);
     articleText.appendChild(h1);
     articleText.appendChild(p1);
-    // miejsce na obrazek 1
+
+    const img1 = document.createElement('div');
+    img1.classList.add('example-img');
+    img1.innerHTML = '<img src="./img/mockup3.png">';
+    articleText.appendChild(img1);
+
     articleText.appendChild(h2);
     articleText.appendChild(p2);
-    // miejsce na obrazek 2
+
+    const video = document.createElement('div');
+    video.classList.add('example-img');
+    video.innerHTML = lang === 'en' ? `<video width="100%" height="auto" controls><source src="./img/demo.mp4" type="video/mp4"></video><span>Custom CMS</span>` :
+        `<video width="100%" height="auto" controls><source src="./img/demo.mp4" type="video/mp4"></video><span>Wlasny CMS</span>`;
+    articleText.appendChild(video);
     articleText.appendChild(h3);
     articleText.appendChild(p3);
-    // miejsce na obrazek 3
     articleText.appendChild(h4);
     articleText.appendChild(p4);
-    // może i czwóreczkę się wrzuci
     articleText.appendChild(h5);
     articleText.appendChild(p5);
 

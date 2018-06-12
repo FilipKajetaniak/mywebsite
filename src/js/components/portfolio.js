@@ -13,11 +13,11 @@ const createPortfolio = (element, lang) => {
         <h1>Portfolio &mdash;</h1>
         <p>Super simple SPA website with hash based router written  with vanilla JS.
         </p>
-        <a href="https://github.com/FilipKajetaniak/dziecimamy" target="_blank">GitHub</a>` :
+        <a href="https://github.com/FilipKajetaniak/mywebsite" target="_blank">GitHub</a>` :
         `<h1>Portfolio &mdash;</h1>
         <p>Prosta strona SPA z routerem opartym o # napisana w czystym JS.
         </p>
-        <a href="https://github.com/FilipKajetaniak/dziecimamy" target="_blank">GitHub</a>`;
+        <a href="https://github.com/FilipKajetaniak/mywebsite" target="_blank">GitHub</a>`;
     const stack = document.createElement('div');
     stack.classList.add('stack');
     stack.innerHTML = `

@@ -13,13 +13,11 @@ const createNovak = (element, lang) => {
         <h1>Novak contractors &mdash;</h1>
         <p>Renovation and slight redesign of Wordpress website.
         </p>
-        <a href="http://www.novakcontractors.co.uk" target="_blank">novakcontractors.co.uk</a>
-        <a href="https://github.com/FilipKajetaniak/dziecimamy" target="_blank">GitHub</a>` :
+        <a href="http://www.novakcontractors.co.uk" target="_blank">novakcontractors.co.uk</a>` :
         `<h1>Novak contractors &mdash;</h1>
         <p>Naprawa i redesign strony zbudowanej na Wordpressie.
         </p>
-        <a href="http://www.novakcontractors.co.uk" target="_blank">novakcontractors.co.uk</a>
-        <a href="https://github.com/FilipKajetaniak/dziecimamy" target="_blank">GitHub</a>`;
+        <a href="http://www.novakcontractors.co.uk" target="_blank">novakcontractors.co.uk</a>`;
     const stack = document.createElement('div');
     stack.classList.add('stack');
     stack.innerHTML = `

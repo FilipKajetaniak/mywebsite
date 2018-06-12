@@ -16,9 +16,9 @@ const createAbout = (element, lang) => {
         'Codziennie pracuję nad zdobyciem czarnego pasa w JavaScripcie. Po godzinach wkręcam się w back-endowe technologie takie jak Express, Node.js i MongoDB żeby moje aplikacje były jeszcze bardziej funkcjonalne.';
     const h4 = document.createElement('h1');
     const p4 = document.createElement('p');
-    h4.innerText = lang === 'en' ? 'Tools / workflow 🔨' : 'Narzedzia / Workflow 🔨';
+    h4.innerText = lang === 'en' ? 'Tools / workflow 🔨' : 'Narzedzia 🔨';
     p4.innerText = lang === 'en' ? 'I use Git and VS Code with ESLint and Emmet on daily basis. I design websites with Photoshop and Illustrator and then turn the designs into code with Sass. I organize and bundle files with Webpack. I care for all generations so I make sure my websites are cross-browser compatible with Babel and Autoprefixer.' :
-        'Kod piszę w VS Code z pomocą ESLinta i Emmeta commitując wszystko na GitHubie. Projekty tworzę w Photoshopie i Illustratorze a potem wszystko zmieniam na kod Sassem. Pliki organizuje i pakuje do kupy Webpackiem. Dbam również o wszystkie pokolenia, więc upewniam się, że mój kod działa na wszystkich przeglądarkach pomagając sobie Babelem i Autoprefixerem.';
+        'Kod piszę w VS Code z pomocą ESLinta i Emmeta commitując wszystko na GitHubie. Projekty tworzę w Photoshopie i Illustratorze a potem wszystko zmieniam na kod używając Sassa. Pliki organizuje i pakuję Webpackiem. Dbam również o wszystkie pokolenia, więc upewniam się, że mój kod działa na wszystkich przeglądarkach pomagając sobie Babelem i Autoprefixerem.';
 
     const container = document.createElement('div');
     container.classList.add('content');
@@ -39,34 +39,34 @@ const createAbout = (element, lang) => {
     skills.classList.add('skills');
     container.appendChild(skills);
     skills.innerHTML = lang === 'en' ? `
-      <h2>Skills 🤹</h2>
-      <div><span class="technology" style="opacity: 1">English</span><div><span>Fluent</span></div></div>
-      <div><span class="technology" style="opacity: 1">Html 5</span><div><span>Confident</span></div></div>
-      <div><span class="technology" style="opacity: 1">Css 3</span><div><span>Confident</span></div></div>
-      <div><span class="technology" style="opacity: 0.8">Vue.js & Nuxt.js</span><div><span>Pretty confident</span></div></div>
-      <div><span class="technology" style="opacity: 0.6">JavaScript ES6</span><div><span>I know basics, now I'm diving into advanced concepts</span></div></div>
-      <div><span class="technology" style="opacity: 0.6">GraphQL</span><div><span>I know some advanced queries and mutations</span></div></div>
-      <div><span class="technology" style="opacity: 0.5">Wordpress</span><div><span>I can use the CMS and modify files, don't know PHP though</span></div></div>
-      <div><span class="technology" style="opacity: 0.4">Bootstrap</span><div><span>I used it only few times but I know how it works</span></div></div>
-      <div><span class="technology" style="opacity: 0.4">jQuery</span><div><span>Haven't used it in a while, I'd need to revise the syntax</span></div></div>
-      <div><span class="technology" style="opacity: 0.3">Express</span><div><span>I know how to write super basic apps</span></div></div>
-      <div><span class="technology" style="opacity: 0.2">Node.js</span><div><span>I'd need documentation to write anything</span></div></div>
-      <h4>( Hover over for more details )</h4>
-    ` : `
-    <h2>Umiejetnosci 🤹</h2>
-    <div><span class="technology" style="opacity: 1">Angielski</span><div><span>Plynny</span></div></div>
-    <div><span class="technology" style="opacity: 1">Html 5</span><div><span>Pewny siebie</span></div></div>
-    <div><span class="technology" style="opacity: 1">Css 3</span><div><span>Pewny siebie</span></div></div>
-    <div><span class="technology" style="opacity: 0.8">Vue.js & Nuxt.js</span><div><span>Calkiem pewny siebie</span></div></div>
-    <div><span class="technology" style="opacity: 0.6">JavaScript ES6</span><div><span>Znam podstawy i ucze sie zaawansowanych konceptów</span></div></div>
-    <div><span class="technology" style="opacity: 0.6">GraphQL</span><div><span>Znam zaawansowane zapytania i mutacje</span></div></div>
-    <div><span class="technology" style="opacity: 0.5">Wordpress</span><div><span>Nie znam PHP ale potrafie modyfikowac pliki</span></div></div>
-    <div><span class="technology" style="opacity: 0.4">Bootstrap</span><div><span>Uzylem tylko kilka razy ale wiem jak dziala</span></div></div>
-    <div><span class="technology" style="opacity: 0.4">jQuery</span><div><span>Unikam w ramach nauki ale poradzilbym sobie</span></div></div>
-    <div><span class="technology" style="opacity: 0.3">Express</span><div><span>Potrafie napisac tylko super proste apki</span></div></div>
-    <div><span class="technology" style="opacity: 0.2">Node.js</span><div><span>Bez dokumentacji bym sie strasznie meczyl</span></div></div>
-    <h4>( Najedz myszka po wiecej szczegolow )</h4>
-  `;
+        <h2>Skills 🤹</h2>
+        <div><span class="technology" style="opacity: 1">English</span><div><span>Fluent</span></div></div>
+        <div><span class="technology" style="opacity: 1">Html 5</span><div><span>Confident</span></div></div>
+        <div><span class="technology" style="opacity: 1">Css 3</span><div><span>Confident</span></div></div>
+        <div><span class="technology" style="opacity: 0.8">Vue.js & Nuxt.js</span><div><span>Pretty confident</span></div></div>
+        <div><span class="technology" style="opacity: 0.6">JavaScript ES6</span><div><span>I know basics well, now I'm diving into advanced concepts</span></div></div>
+        <div><span class="technology" style="opacity: 0.6">GraphQL</span><div><span>I know some advanced queries and mutations</span></div></div>
+        <div><span class="technology" style="opacity: 0.5">Wordpress</span><div><span>I can use the CMS and modify files, don't know PHP though</span></div></div>
+        <div><span class="technology" style="opacity: 0.4">Bootstrap</span><div><span>I used it only few times but I know how it works</span></div></div>
+        <div><span class="technology" style="opacity: 0.4">jQuery</span><div><span>Haven't used it in a while, I'd need to revise the syntax</span></div></div>
+        <div><span class="technology" style="opacity: 0.3">Express</span><div><span>I know how to write super basic apps</span></div></div>
+        <div><span class="technology" style="opacity: 0.2">Node.js</span><div><span>I'd need documentation to write anything</span></div></div>
+        <h4>( Hover over for more details )</h4>
+        ` : `
+        <h2>Umiejetnosci 🤹</h2>
+        <div><span class="technology" style="opacity: 1">Angielski</span><div><span>Plynny</span></div></div>
+        <div><span class="technology" style="opacity: 1">Html 5</span><div><span>Pewny siebie</span></div></div>
+        <div><span class="technology" style="opacity: 1">Css 3</span><div><span>Pewny siebie</span></div></div>
+        <div><span class="technology" style="opacity: 0.8">Vue.js & Nuxt.js</span><div><span>Calkiem pewny siebie</span></div></div>
+        <div><span class="technology" style="opacity: 0.6">JavaScript ES6</span><div><span>Swietnie znam podstawy i ucze sie zaawansowanych konceptów</span></div></div>
+        <div><span class="technology" style="opacity: 0.6">GraphQL</span><div><span>Znam zaawansowane zapytania i mutacje</span></div></div>
+        <div><span class="technology" style="opacity: 0.5">Wordpress</span><div><span>Nie znam PHP ale potrafie modyfikowac pliki</span></div></div>
+        <div><span class="technology" style="opacity: 0.4">Bootstrap</span><div><span>Uzylem tylko kilka razy ale wiem jak dziala</span></div></div>
+        <div><span class="technology" style="opacity: 0.4">jQuery</span><div><span>Unikam w ramach nauki ale poradzilbym sobie</span></div></div>
+        <div><span class="technology" style="opacity: 0.3">Express</span><div><span>Potrafie napisac tylko super proste apki</span></div></div>
+        <div><span class="technology" style="opacity: 0.2">Node.js</span><div><span>Bez dokumentacji bym sie strasznie meczyl</span></div></div>
+        <h4>( Najedz myszka po wiecej szczegolow )</h4>
+        `;
     const footer = document.createElement('div');
     footer.classList.add('mobile-footer');
     footer.innerHTML = lang === 'en' ? `<a onclick="location.hash='#work'">Work <i class="fas fa-arrow-right"></i></a>` : `<a onclick="location.hash='#projekty'">Projekty <i class="fas fa-arrow-right"></i></a>`;

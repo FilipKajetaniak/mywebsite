@@ -13,13 +13,13 @@ const createStock = (element, lang) => {
         <h1>Boards stock &mdash;</h1>
         <p>Super simple app for keeping track of stored floorboards written with Vue.js.
         </p>
-        <a href="https://github.com/FilipKajetaniak/dziecimamy" target="_blank">Live</a>
-        <a href="https://github.com/FilipKajetaniak/dziecimamy" target="_blank">GitHub</a>` :
+        <a href="https://kajetaniak.pl/stockdesek.html" target="_blank">Live</a>
+        <a href="https://github.com/FilipKajetaniak/stock" target="_blank">GitHub</a>` :
         `<h1>Spis desek &mdash;</h1>
         <p>Prosta aplikacja do spisywania ilości desek napisana w Vue.js.
         </p>
-        <a href="https://github.com/FilipKajetaniak/dziecimamy" target="_blank">Live</a>
-        <a href="https://github.com/FilipKajetaniak/dziecimamy" target="_blank">GitHub</a>`;
+        <a href="https://kajetaniak.pl/stockdesek.html" target="_blank">Live</a>
+        <a href="https://github.com/FilipKajetaniak/stock" target="_blank">GitHub</a>`;
     const stack = document.createElement('div');
     stack.classList.add('stack');
     stack.innerHTML = `
